@@ -1,0 +1,1621 @@
+{
+  "version": "2.14",
+  "children": [
+    {
+      "type": "frame",
+      "id": "landing-desktop",
+      "x": 0,
+      "y": 0,
+      "name": "US-D02 Landing Page / Desktop",
+      "width": 1440,
+      "fill": "$color.bg",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "meta-bar",
+          "name": "Design Meta",
+          "width": "fill_container",
+          "fill": "#1E293B",
+          "padding": [
+            12,
+            48
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "meta-title",
+              "name": "Meta",
+              "fill": "#F8FAFC",
+              "content": "US-D02 · 課程銷售頁（桌機版 ≥1024px）",
+              "lineHeight": 1.5,
+              "fontFamily": "Fira Sans",
+              "fontSize": 12,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "meta-us",
+              "name": "Impl US",
+              "fill": "#94A3B8",
+              "content": "實作：US-01 Landing Page · US-03 CTA Scroll",
+              "lineHeight": 1.5,
+              "fontFamily": "Fira Sans",
+              "fontSize": 12
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "header",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 64,
+          "fill": "$color.surface",
+          "stroke": "$color.border",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "padding": [
+            0,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "logo",
+              "name": "Logo",
+              "fill": "$color.text",
+              "content": "AI 課程 · Lead Collector",
+              "lineHeight": 1.5,
+              "fontFamily": "Fira Sans",
+              "fontSize": 16,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "header-cta",
+              "name": "Header CTA",
+              "width": 180,
+              "height": 48,
+              "fill": "$color.primary",
+              "cornerRadius": "$radius.md",
+              "padding": [
+                0,
+                24
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "header-cta-label",
+                  "name": "Header CTA label",
+                  "fill": "#FFFFFF",
+                  "content": "加入等候名單",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Fira Sans",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "hero",
+          "name": "Section / Hero",
+          "width": "fill_container",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "$color.bg-alt",
+                "position": 0
+              },
+              {
+                "color": "$color.bg",
+                "position": 1
+              }
+            ]
+          },
+          "gap": 64,
+          "padding": 80,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "hero-content",
+              "name": "Hero Content",
+              "width": 640,
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "hero-eyebrow",
+                  "name": "Eyebrow",
+                  "fill": "$color.secondary",
+                  "content": "線上實戰工作坊",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Fira Sans",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "hero-title",
+                  "name": "Course Name",
+                  "fill": "$color.text",
+                  "textGrowth": "fixed-width",
+                  "width": 620,
+                  "content": "聊著聊著，AI 就做完了：不懂程式也能用 AI 做出可上線產品",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Fira Sans",
+                  "fontSize": 40,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "hero-tagline",
+                  "name": "Tagline",
+                  "fill": "$color.text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 580,
+                  "content": "半天內，用 AI 協作完成可上線的副業 MVP——從 Spec 到 Deploy，全程實戰",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Fira Sans",
+                  "fontSize": 18
+                },
+                {
+                  "type": "frame",
+                  "id": "hero-cta",
+                  "name": "Hero CTA",
+                  "width": 240,
+                  "height": 48,
+                  "fill": "$color.primary",
+                  "cornerRadius": "$radius.md",
+                  "padding": [
+                    0,
+                    24
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "hero-cta-label",
+                      "name": "Hero CTA label",
+                      "fill": "#FFFFFF",
+                      "content": "加入等候名單",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "hero-cta-note",
+                  "name": "Annotation",
+                  "width": "fill_container",
+                  "fill": "#FEF3C7",
+                  "cornerRadius": "$radius.md",
+                  "stroke": "#F59E0B",
+                  "strokeWidth": 1,
+                  "gap": 8,
+                  "padding": [
+                    10,
+                    14
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "hero-cta-note-text",
+                      "name": "Note",
+                      "fill": "#92400E",
+                      "textGrowth": "fixed-width",
+                      "width": 1200,
+                      "content": "📌 US-03：Hero CTA 點擊 → smooth scroll 至 #waitlist 表單區；同時觸發 analytics_events cta_click",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hero-visual",
+              "name": "Hero Visual",
+              "width": 520,
+              "height": 360,
+              "fill": "$color.surface",
+              "cornerRadius": "$radius.xl",
+              "stroke": "$color.border",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 12,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "hero-visual-title",
+                  "name": "Visual",
+                  "fill": "$color.secondary",
+                  "content": "AI × SDD 實戰流程",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Fira Sans",
+                  "fontSize": 20,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "hero-visual-sub",
+                  "name": "Visual Sub",
+                  "fill": "$color.text-muted",
+                  "content": "Spec → Build → Deploy",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Fira Sans",
+                  "fontSize": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pain-points",
+          "name": "Section / Pain Points",
+          "width": "fill_container",
+          "fill": "$color.bg",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": 80,
+          "children": [
+            {
+              "type": "text",
+              "id": "pain-title",
+              "name": "你是否也有這些卡關？ heading",
+              "fill": "$color.text",
+              "textGrowth": "fixed-width",
+              "width": 900,
+              "content": "你是否也有這些卡關？",
+              "lineHeight": 1.5,
+              "fontFamily": "Fira Sans",
+              "fontSize": 28,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "pain-cards",
+              "name": "Pain Cards",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "pain-1",
+                  "name": "Pain Card / 想做 Side Project 但不會寫程式",
+                  "width": 380,
+                  "fill": "$color.surface",
+                  "cornerRadius": "$radius.lg",
+                  "stroke": "$color.border",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "pain-1-icon",
+                      "width": 40,
+                      "height": 40,
+                      "fill": "$color.bg-alt",
+                      "cornerRadius": 9999,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "pain-1-icon-text",
+                          "name": "Icon",
+                          "fill": "$color.secondary",
+                          "content": "!",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "pain-1-title",
+                      "name": "Title",
+                      "fill": "$color.text",
+                      "textGrowth": "fixed-width",
+                      "width": 320,
+                      "content": "想做 Side Project 但不會寫程式",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 18,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "pain-1-desc",
+                      "name": "Description",
+                      "fill": "$color.text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": 320,
+                      "content": "有點子、有動力，卻卡在技術門檻，遲遲無法把想法變成可使用的產品。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "pain-2",
+                  "name": "Pain Card / 嘗試 AI 卻卡在需求與部署",
+                  "width": 380,
+                  "fill": "$color.surface",
+                  "cornerRadius": "$radius.lg",
+                  "stroke": "$color.border",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "pain-2-icon",
+                      "width": 40,
+                      "height": 40,
+                      "fill": "$color.bg-alt",
+                      "cornerRadius": 9999,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "pain-2-icon-text",
+                          "name": "Icon",
+                          "fill": "$color.secondary",
+                          "content": "!",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "pain-2-title",
+                      "name": "Title",
+                      "fill": "$color.text",
+                      "textGrowth": "fixed-width",
+                      "width": 320,
+                      "content": "嘗試 AI 卻卡在需求與部署",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 18,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "pain-2-desc",
+                      "name": "Description",
+                      "fill": "$color.text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": 320,
+                      "content": "用 ChatGPT 寫了片段程式，但不知道怎麼整理成 Spec、怎麼真正部署上線。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "pain-3",
+                  "name": "Pain Card / 學了很多卻做不出完整 MVP",
+                  "width": 380,
+                  "fill": "$color.surface",
+                  "cornerRadius": "$radius.lg",
+                  "stroke": "$color.border",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "pain-3-icon",
+                      "width": 40,
+                      "height": 40,
+                      "fill": "$color.bg-alt",
+                      "cornerRadius": 9999,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "pain-3-icon-text",
+                          "name": "Icon",
+                          "fill": "$color.secondary",
+                          "content": "!",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "pain-3-title",
+                      "name": "Title",
+                      "fill": "$color.text",
+                      "textGrowth": "fixed-width",
+                      "width": 320,
+                      "content": "學了很多卻做不出完整 MVP",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 18,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "pain-3-desc",
+                      "name": "Description",
+                      "fill": "$color.text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": 320,
+                      "content": "看了不少教學，缺少一套從 0 到 1 的實戰流程，無法在有限時間內交付成果。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "promise",
+          "name": "Section / Promise",
+          "width": "fill_container",
+          "fill": "$color.surface",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            64,
+            80
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "promise-title",
+              "name": "課程承諾 heading",
+              "fill": "$color.text",
+              "textGrowth": "fixed-width",
+              "width": 900,
+              "content": "課程承諾",
+              "lineHeight": 1.5,
+              "fontFamily": "Fira Sans",
+              "fontSize": 28,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "promise-box",
+              "name": "Promise Highlight",
+              "width": "fill_container",
+              "fill": "$color.bg-alt",
+              "cornerRadius": "$radius.xl",
+              "stroke": "$color.secondary",
+              "strokeWidth": 2,
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 40,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "promise-headline",
+                  "name": "Headline",
+                  "fill": "$color.text",
+                  "content": "半天內完成可上線副業 MVP",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Fira Sans",
+                  "fontSize": 32,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "promise-body",
+                  "name": "Body",
+                  "fill": "$color.text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 1200,
+                  "content": "從釐清需求、撰寫 Spec、設定 AI Rules，到 Build、Debug、Deploy——帶著你走完一條可複製的最小成功路線。結束時你會擁有一個真正可對外展示的產品，而不只是筆記或半成品。",
+                  "lineHeight": 1.7,
+                  "fontFamily": "Fira Sans",
+                  "fontSize": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "audience",
+          "name": "Section / Audience",
+          "width": "fill_container",
+          "fill": "$color.bg",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 80,
+          "children": [
+            {
+              "type": "text",
+              "id": "audience-title",
+              "name": "適合對象 heading",
+              "fill": "$color.text",
+              "textGrowth": "fixed-width",
+              "width": 900,
+              "content": "適合對象",
+              "lineHeight": 1.5,
+              "fontFamily": "Fira Sans",
+              "fontSize": 28,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "audience-grid",
+              "name": "Audience Grid",
+              "width": "fill_container",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "audience-0",
+                  "name": "Audience / 0",
+                  "fill": "$color.surface",
+                  "cornerRadius": 9999,
+                  "stroke": "$color.border",
+                  "strokeWidth": 1,
+                  "gap": 10,
+                  "padding": [
+                    14,
+                    20
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "audience-0-dot",
+                      "name": "Dot",
+                      "fill": "$color.primary",
+                      "content": "✓",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "audience-0-text",
+                      "name": "Text",
+                      "fill": "$color.text",
+                      "content": "非工程背景的創業者 / 產品人",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "audience-1",
+                  "name": "Audience / 1",
+                  "fill": "$color.surface",
+                  "cornerRadius": 9999,
+                  "stroke": "$color.border",
+                  "strokeWidth": 1,
+                  "gap": 10,
+                  "padding": [
+                    14,
+                    20
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "audience-1-dot",
+                      "name": "Dot",
+                      "fill": "$color.primary",
+                      "content": "✓",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "audience-1-text",
+                      "name": "Text",
+                      "fill": "$color.text",
+                      "content": "想轉型做 Side Project 的上班族",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "audience-2",
+                  "name": "Audience / 2",
+                  "fill": "$color.surface",
+                  "cornerRadius": 9999,
+                  "stroke": "$color.border",
+                  "strokeWidth": 1,
+                  "gap": 10,
+                  "padding": [
+                    14,
+                    20
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "audience-2-dot",
+                      "name": "Dot",
+                      "fill": "$color.primary",
+                      "content": "✓",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "audience-2-text",
+                      "name": "Text",
+                      "fill": "$color.text",
+                      "content": "已接觸 AI 但缺系統化流程的學習者",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "audience-3",
+                  "name": "Audience / 3",
+                  "fill": "$color.surface",
+                  "cornerRadius": 9999,
+                  "stroke": "$color.border",
+                  "strokeWidth": 1,
+                  "gap": 10,
+                  "padding": [
+                    14,
+                    20
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "audience-3-dot",
+                      "name": "Dot",
+                      "fill": "$color.primary",
+                      "content": "✓",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "audience-3-text",
+                      "name": "Text",
+                      "fill": "$color.text",
+                      "content": "希望快速驗證市場的獨立開發新手",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "curriculum",
+          "name": "Section / Curriculum",
+          "width": "fill_container",
+          "fill": "$color.surface",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": 80,
+          "children": [
+            {
+              "type": "text",
+              "id": "curriculum-title",
+              "name": "課程內容摘要 heading",
+              "fill": "$color.text",
+              "textGrowth": "fixed-width",
+              "width": 900,
+              "content": "課程內容摘要",
+              "lineHeight": 1.5,
+              "fontFamily": "Fira Sans",
+              "fontSize": 28,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "curriculum-sub",
+              "name": "Sub",
+              "fill": "$color.text-secondary",
+              "content": "六個實戰模組，對應 SDD 完整開發流程",
+              "lineHeight": 1.5,
+              "fontFamily": "Fira Sans",
+              "fontSize": 16
+            },
+            {
+              "type": "frame",
+              "id": "curriculum-grid",
+              "name": "Curriculum Grid",
+              "width": "fill_container",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "mod-1",
+                  "name": "Module / 選題",
+                  "width": 200,
+                  "fill": "$color.surface",
+                  "cornerRadius": "$radius.lg",
+                  "stroke": "$color.border",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mod-1-step",
+                      "name": "Step",
+                      "fill": "$color.secondary",
+                      "content": "01",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mod-1-title",
+                      "name": "Title",
+                      "fill": "$color.text",
+                      "content": "選題",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mod-1-desc",
+                      "name": "Desc",
+                      "fill": "$color.text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": 160,
+                      "content": "鎖定可驗證的副業方向",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mod-2",
+                  "name": "Module / Spec",
+                  "width": 200,
+                  "fill": "$color.surface",
+                  "cornerRadius": "$radius.lg",
+                  "stroke": "$color.border",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mod-2-step",
+                      "name": "Step",
+                      "fill": "$color.secondary",
+                      "content": "02",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mod-2-title",
+                      "name": "Title",
+                      "fill": "$color.text",
+                      "content": "Spec",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mod-2-desc",
+                      "name": "Desc",
+                      "fill": "$color.text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": 160,
+                      "content": "用 AI 協作寫出可執行規格",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mod-3",
+                  "name": "Module / Rules",
+                  "width": 200,
+                  "fill": "$color.surface",
+                  "cornerRadius": "$radius.lg",
+                  "stroke": "$color.border",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mod-3-step",
+                      "name": "Step",
+                      "fill": "$color.secondary",
+                      "content": "03",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mod-3-title",
+                      "name": "Title",
+                      "fill": "$color.text",
+                      "content": "Rules",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mod-3-desc",
+                      "name": "Desc",
+                      "fill": "$color.text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": 160,
+                      "content": "設定 AI 工作模式與底線",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mod-4",
+                  "name": "Module / Build",
+                  "width": 200,
+                  "fill": "$color.surface",
+                  "cornerRadius": "$radius.lg",
+                  "stroke": "$color.border",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mod-4-step",
+                      "name": "Step",
+                      "fill": "$color.secondary",
+                      "content": "04",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mod-4-title",
+                      "name": "Title",
+                      "fill": "$color.text",
+                      "content": "Build",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mod-4-desc",
+                      "name": "Desc",
+                      "fill": "$color.text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": 160,
+                      "content": "App Router 全端實作",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mod-5",
+                  "name": "Module / Debug",
+                  "width": 200,
+                  "fill": "$color.surface",
+                  "cornerRadius": "$radius.lg",
+                  "stroke": "$color.border",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mod-5-step",
+                      "name": "Step",
+                      "fill": "$color.secondary",
+                      "content": "05",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mod-5-title",
+                      "name": "Title",
+                      "fill": "$color.text",
+                      "content": "Debug",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mod-5-desc",
+                      "name": "Desc",
+                      "fill": "$color.text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": 160,
+                      "content": "除錯與驗收對照 spec",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mod-6",
+                  "name": "Module / Deploy",
+                  "width": 200,
+                  "fill": "$color.surface",
+                  "cornerRadius": "$radius.lg",
+                  "stroke": "$color.border",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mod-6-step",
+                      "name": "Step",
+                      "fill": "$color.secondary",
+                      "content": "06",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mod-6-title",
+                      "name": "Title",
+                      "fill": "$color.text",
+                      "content": "Deploy",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mod-6-desc",
+                      "name": "Desc",
+                      "fill": "$color.text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": 160,
+                      "content": "Vercel 一鍵上線",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "waitlist",
+          "name": "Section / Waitlist Form (#waitlist)",
+          "width": "fill_container",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#FFF7ED",
+                "position": 0
+              },
+              {
+                "color": "$color.bg",
+                "position": 1
+              }
+            ]
+          },
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 80,
+          "children": [
+            {
+              "type": "frame",
+              "id": "waitlist-header",
+              "name": "Waitlist Header",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "waitlist-title",
+                  "name": "加入等候名單 heading",
+                  "fill": "$color.text",
+                  "textGrowth": "fixed-width",
+                  "width": 900,
+                  "content": "加入等候名單",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Fira Sans",
+                  "fontSize": 28,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "waitlist-sub",
+                  "name": "Sub",
+                  "fill": "$color.text-secondary",
+                  "content": "留下 Email，課程開放時第一時間通知你",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Fira Sans",
+                  "fontSize": 16
+                },
+                {
+                  "type": "frame",
+                  "id": "waitlist-cta-top",
+                  "name": "Waitlist CTA Top",
+                  "width": 260,
+                  "height": 48,
+                  "fill": "$color.primary",
+                  "cornerRadius": "$radius.md",
+                  "padding": [
+                    0,
+                    24
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "waitlist-cta-top-label",
+                      "name": "Waitlist CTA Top label",
+                      "fill": "#FFFFFF",
+                      "content": "立即加入等候名單",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "waitlist-anchor-note",
+              "name": "Annotation",
+              "width": "fill_container",
+              "fill": "#FEF3C7",
+              "cornerRadius": "$radius.md",
+              "stroke": "#F59E0B",
+              "strokeWidth": 1,
+              "gap": 8,
+              "padding": [
+                10,
+                14
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "waitlist-anchor-note-text",
+                  "name": "Note",
+                  "fill": "#92400E",
+                  "textGrowth": "fixed-width",
+                  "width": 1200,
+                  "content": "📌 #waitlist anchor：Hero / Header CTA smooth scroll 終點。表單 Default 狀態；Loading / Error / Success 見 US-D04",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Fira Sans",
+                  "fontSize": 12
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "waitlist-form",
+              "name": "Waitlist Form / Default",
+              "width": 720,
+              "fill": "$color.surface",
+              "cornerRadius": "$radius.xl",
+              "stroke": "$color.border",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 20,
+              "padding": 40,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "form-row-1",
+                  "name": "Form Row 1",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "form-name",
+                      "name": "Field / 姓名",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "form-name-label",
+                          "name": "Label",
+                          "fill": "$color.text",
+                          "content": "姓名",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "form-name-input",
+                          "width": "fill_container",
+                          "height": 44,
+                          "fill": "$color.surface",
+                          "cornerRadius": "$radius.md",
+                          "stroke": "$color.border",
+                          "strokeWidth": 1,
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "form-name-ph",
+                              "name": "Placeholder",
+                              "fill": "$color.text-muted",
+                              "content": "請輸入您的姓名",
+                              "lineHeight": 1.5,
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 16
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "form-email",
+                      "name": "Field / Email *",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "form-email-label",
+                          "name": "Label",
+                          "fill": "$color.text",
+                          "content": "Email *",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "form-email-input",
+                          "width": "fill_container",
+                          "height": 44,
+                          "fill": "$color.surface",
+                          "cornerRadius": "$radius.md",
+                          "stroke": "$color.border",
+                          "strokeWidth": 1,
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "form-email-ph",
+                              "name": "Placeholder",
+                              "fill": "$color.text-muted",
+                              "content": "name@example.com",
+                              "lineHeight": 1.5,
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 16
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "form-role",
+                  "name": "Field / 身分 / 角色",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "form-role-label",
+                      "name": "Label",
+                      "fill": "$color.text",
+                      "content": "身分 / 角色",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "form-role-input",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "$color.surface",
+                      "cornerRadius": "$radius.md",
+                      "stroke": "$color.border",
+                      "strokeWidth": 1,
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "form-role-ph",
+                          "name": "Placeholder",
+                          "fill": "$color.text-muted",
+                          "content": "請選擇身分 ▾",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 16
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "form-product",
+                  "name": "Field / 最想用 AI 做出的產品",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "form-product-label",
+                      "name": "Label",
+                      "fill": "$color.text",
+                      "content": "最想用 AI 做出的產品",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "form-product-input",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "$color.surface",
+                      "cornerRadius": "$radius.md",
+                      "stroke": "$color.border",
+                      "strokeWidth": 1,
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "form-product-ph",
+                          "name": "Placeholder",
+                          "fill": "$color.text-muted",
+                          "content": "例如：客戶名單收集系統",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 16
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "form-pain",
+                  "name": "Field / 目前卡關點",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "form-pain-label",
+                      "name": "Label",
+                      "fill": "$color.text",
+                      "content": "目前卡關點",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "form-pain-input",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "$color.surface",
+                      "cornerRadius": "$radius.md",
+                      "stroke": "$color.border",
+                      "strokeWidth": 1,
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "form-pain-ph",
+                          "name": "Placeholder",
+                          "fill": "$color.text-muted",
+                          "content": "例如：不知道怎麼從 Spec 開始",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 16
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "form-checkbox-row",
+                  "name": "Checkbox Row",
+                  "gap": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 4,
+                      "id": "form-checkbox",
+                      "fill": "$color.surface",
+                      "width": 20,
+                      "height": 20,
+                      "stroke": "$color.border",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "form-checkbox-label",
+                      "name": "Checkbox",
+                      "fill": "$color.text",
+                      "content": "我願意接受訪談，協助了解需求",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "form-submit-wrap",
+                  "name": "Submit Wrap",
+                  "width": "fill_container",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "form-submit",
+                      "name": "Submit",
+                      "width": "fill_container",
+                      "height": 48,
+                      "fill": "$color.primary",
+                      "cornerRadius": "$radius.md",
+                      "padding": [
+                        0,
+                        24
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "form-submit-label",
+                          "name": "Submit label",
+                          "fill": "#FFFFFF",
+                          "content": "送出等候名單",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "footer",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "#1E293B",
+          "padding": [
+            32,
+            80
+          ],
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "footer-copy",
+              "name": "Copyright",
+              "fill": "#94A3B8",
+              "content": "© 2026 Lead Collector MVP · 教學演示專案",
+              "lineHeight": 1.5,
+              "fontFamily": "Fira Sans",
+              "fontSize": 12
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "color.primary": {
+      "type": "color",
+      "value": "#F97316"
+    },
+    "color.primary-hover": {
+      "type": "color",
+      "value": "#EA580C"
+    },
+    "color.secondary": {
+      "type": "color",
+      "value": "#0EA5E9"
+    },
+    "color.bg": {
+      "type": "color",
+      "value": "#F8FAFC"
+    },
+    "color.bg-alt": {
+      "type": "color",
+      "value": "#F0F9FF"
+    },
+    "color.surface": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "color.text": {
+      "type": "color",
+      "value": "#0F172A"
+    },
+    "color.text-secondary": {
+      "type": "color",
+      "value": "#64748B"
+    },
+    "color.text-muted": {
+      "type": "color",
+      "value": "#94A3B8"
+    },
+    "color.border": {
+      "type": "color",
+      "value": "#E2E8F0"
+    },
+    "radius.md": {
+      "type": "number",
+      "value": 8
+    },
+    "radius.lg": {
+      "type": "number",
+      "value": 12
+    },
+    "radius.xl": {
+      "type": "number",
+      "value": 16
+    }
+  },
+  "fileToken": "e50c1a3f-4a0f-4ac1-a6b7-e43dfb5e942d"
+}

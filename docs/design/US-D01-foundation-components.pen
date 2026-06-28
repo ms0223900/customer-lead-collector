@@ -1,0 +1,1477 @@
+{
+  "version": "2.14",
+  "children": [
+    {
+      "type": "frame",
+      "id": "page",
+      "x": 0,
+      "y": 0,
+      "name": "US-D01 Foundation & Components",
+      "width": 1440,
+      "fill": "$color.bg",
+      "layout": "vertical",
+      "gap": 48,
+      "padding": 48,
+      "children": [
+        {
+          "type": "text",
+          "id": "page-title",
+          "name": "Page Title",
+          "fill": "$color.text",
+          "content": "US-D01 · Foundation & Components",
+          "lineHeight": 1.5,
+          "fontFamily": "Fira Sans",
+          "fontSize": 36,
+          "fontWeight": "700"
+        },
+        {
+          "type": "text",
+          "id": "page-subtitle",
+          "name": "Page Subtitle",
+          "fill": "$color.text-secondary",
+          "content": "Lead Collector MVP · 《聊著聊著，AI 就做完了》",
+          "lineHeight": 1.5,
+          "fontFamily": "Fira Sans",
+          "fontSize": 16,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "sec-colors",
+          "name": "Section / Colors",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "sec-colors-title",
+              "name": "Colors Title",
+              "fill": "$color.text",
+              "content": "Foundation ···Colors",
+              "lineHeight": 1.5,
+              "fontFamily": "Fira Sans",
+              "fontSize": 20,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "color-swatches",
+              "name": "Color Swatches",
+              "width": "fill_container",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "sw-primary",
+                  "name": "Primary CTA",
+                  "width": 120,
+                  "height": 100,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": "$radius.md",
+                      "id": "sw-primary-box",
+                      "fill": "$color.primary",
+                      "width": 120,
+                      "height": 64,
+                      "stroke": "$color.border",
+                      "strokeWidth": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "sw-primary-label",
+                      "name": "Primary CTA label",
+                      "fill": "$color.text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": 120,
+                      "content": "Primary #F97316",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "sw-secondary",
+                  "name": "Secondary",
+                  "width": 120,
+                  "height": 100,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": "$radius.md",
+                      "id": "sw-secondary-box",
+                      "fill": "$color.secondary",
+                      "width": 120,
+                      "height": 64,
+                      "stroke": "$color.border",
+                      "strokeWidth": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "sw-secondary-label",
+                      "name": "Secondary label",
+                      "fill": "$color.text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": 120,
+                      "content": "Secondary #0EA5E9",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "sw-bg",
+                  "name": "Background",
+                  "width": 120,
+                  "height": 100,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": "$radius.md",
+                      "id": "sw-bg-box",
+                      "fill": "$color.bg",
+                      "width": 120,
+                      "height": 64,
+                      "stroke": "$color.border",
+                      "strokeWidth": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "sw-bg-label",
+                      "name": "Background label",
+                      "fill": "$color.text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": 120,
+                      "content": "BG #F8FAFC",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "sw-surface",
+                  "name": "Surface",
+                  "width": 120,
+                  "height": 100,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": "$radius.md",
+                      "id": "sw-surface-box",
+                      "fill": "$color.surface",
+                      "width": 120,
+                      "height": 64,
+                      "stroke": "$color.border",
+                      "strokeWidth": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "sw-surface-label",
+                      "name": "Surface label",
+                      "fill": "$color.text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": 120,
+                      "content": "Surface #FFF",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "sw-success",
+                  "name": "Success",
+                  "width": 120,
+                  "height": 100,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": "$radius.md",
+                      "id": "sw-success-box",
+                      "fill": "$color.success",
+                      "width": 120,
+                      "height": 64,
+                      "stroke": "$color.border",
+                      "strokeWidth": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "sw-success-label",
+                      "name": "Success label",
+                      "fill": "$color.text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": 120,
+                      "content": "Success #22C55E",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "sw-error",
+                  "name": "Error",
+                  "width": 120,
+                  "height": 100,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": "$radius.md",
+                      "id": "sw-error-box",
+                      "fill": "$color.error",
+                      "width": 120,
+                      "height": 64,
+                      "stroke": "$color.border",
+                      "strokeWidth": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "sw-error-label",
+                      "name": "Error label",
+                      "fill": "$color.text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": 120,
+                      "content": "Error #EF4444",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "sw-warning",
+                  "name": "Warning",
+                  "width": 120,
+                  "height": 100,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": "$radius.md",
+                      "id": "sw-warning-box",
+                      "fill": "$color.warning",
+                      "width": 120,
+                      "height": 64,
+                      "stroke": "$color.border",
+                      "strokeWidth": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "sw-warning-label",
+                      "name": "Warning label",
+                      "fill": "$color.text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": 120,
+                      "content": "Warning #F59E0B",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "color-tailwind-note",
+              "name": "Tailwind Note",
+              "fill": "$color.text-muted",
+              "content": "Tailwind mapping: primary→orange-500, secondary→sky-500, bg→slate-50, text→slate-900",
+              "lineHeight": 1.5,
+              "fontFamily": "Fira Sans",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "sec-typography",
+          "name": "Section / Typography",
+          "width": "fill_container",
+          "fill": "$color.surface",
+          "cornerRadius": "$radius.lg",
+          "stroke": "$color.border",
+          "strokeWidth": 1,
+          "layout": "vertical",
+          "gap": 12,
+          "padding": 24,
+          "children": [
+            {
+              "type": "text",
+              "id": "sec-type-title",
+              "name": "Typography Title",
+              "fill": "$color.text",
+              "content": "Foundation / Typography (Fira Sans)",
+              "lineHeight": 1.5,
+              "fontFamily": "Fira Sans",
+              "fontSize": 20,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "type-display",
+              "name": "Display",
+              "fill": "$color.text",
+              "content": "Display / H1 — 36px Bold — 課程銷售頁主標",
+              "lineHeight": 1.5,
+              "fontFamily": "Fira Sans",
+              "fontSize": 36,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "type-h2",
+              "name": "H2",
+              "fill": "$color.text",
+              "content": "H2 — 28px Semibold — 區塊標題",
+              "lineHeight": 1.5,
+              "fontFamily": "Fira Sans",
+              "fontSize": 28,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "type-h3",
+              "name": "H3",
+              "fill": "$color.text",
+              "content": "H3 — 20px Semibold — 卡片標題",
+              "lineHeight": 1.5,
+              "fontFamily": "Fira Sans",
+              "fontSize": 20,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "type-body",
+              "name": "Body",
+              "fill": "$color.text",
+              "content": "Body — 16px Regular — 正文與表單說明文字",
+              "lineHeight": 1.5,
+              "fontFamily": "Fira Sans",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "type-label",
+              "name": "Label",
+              "fill": "$color.text",
+              "content": "Label — 14px Medium — 表單欄位標籤",
+              "lineHeight": 1.5,
+              "fontFamily": "Fira Sans",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "type-error",
+              "name": "Error",
+              "fill": "$color.error",
+              "content": "Error — 12px Regular — 請輸入有效的 Email 地址",
+              "lineHeight": 1.5,
+              "fontFamily": "Fira Sans",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "sec-buttons",
+          "name": "Section / Buttons",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "sec-btn-title",
+              "name": "Buttons Title",
+              "fill": "$color.text",
+              "content": "Components / Primary Button",
+              "lineHeight": 1.5,
+              "fontFamily": "Fira Sans",
+              "fontSize": 20,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "btn-row",
+              "name": "Button States Row",
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "comp-btn-primary",
+                  "name": "Button / Primary",
+                  "reusable": true,
+                  "width": 200,
+                  "height": 48,
+                  "fill": "$color.primary",
+                  "cornerRadius": "$radius.md",
+                  "padding": [
+                    0,
+                    24
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "comp-btn-primary-label",
+                      "name": "Button / Primary label",
+                      "fill": "#FFFFFF",
+                      "content": "加入等候名單",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "btn-primary-hover",
+                  "name": "Button / Primary Hover",
+                  "width": 200,
+                  "height": 48,
+                  "fill": "$color.primary-hover",
+                  "cornerRadius": "$radius.md",
+                  "padding": [
+                    0,
+                    24
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "btn-primary-hover-label",
+                      "name": "Button / Primary Hover label",
+                      "fill": "#FFFFFF",
+                      "content": "加入等候名單",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "btn-primary-disabled",
+                  "name": "Button / Primary Disabled",
+                  "opacity": 0.7,
+                  "width": 200,
+                  "height": 48,
+                  "fill": "$color.primary-disabled",
+                  "cornerRadius": "$radius.md",
+                  "padding": [
+                    0,
+                    24
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "btn-primary-disabled-label",
+                      "name": "Button / Primary Disabled label",
+                      "fill": "#FFFFFF",
+                      "content": "加入等候名單",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "btn-note",
+              "name": "Button Note",
+              "fill": "$color.text-muted",
+              "content": "Default · Hover (#EA580C) · Disabled (opacity 70%)",
+              "lineHeight": 1.5,
+              "fontFamily": "Fira Sans",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "sec-forms",
+          "name": "Section / Form Fields",
+          "width": "fill_container",
+          "gap": 48,
+          "children": [
+            {
+              "type": "frame",
+              "id": "form-fields-default",
+              "name": "Form Fields / Default",
+              "width": 400,
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "sec-form-title",
+                  "name": "Form Title",
+                  "fill": "$color.text",
+                  "content": "Components / Form Fields",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Fira Sans",
+                  "fontSize": 20,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "comp-input-text",
+                  "name": "Input / Text",
+                  "reusable": true,
+                  "width": 360,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "comp-input-text-label",
+                      "name": "Input / Text label",
+                      "fill": "$color.text",
+                      "content": "姓名",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "comp-input-text-input",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "$color.surface",
+                      "cornerRadius": "$radius.md",
+                      "stroke": "$color.border",
+                      "strokeWidth": 1,
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "comp-input-text-placeholder",
+                          "name": "Input / Text placeholder",
+                          "fill": "$color.text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": 320,
+                          "content": "請輸入您的姓名",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "comp-input-email",
+                  "name": "Input / Email",
+                  "reusable": true,
+                  "width": 360,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "comp-input-email-label",
+                      "name": "Input / Email label",
+                      "fill": "$color.text",
+                      "content": "Email *",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "comp-input-email-input",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "$color.surface",
+                      "cornerRadius": "$radius.md",
+                      "stroke": "$color.border",
+                      "strokeWidth": 1,
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "comp-input-email-placeholder",
+                          "name": "Input / Email placeholder",
+                          "fill": "$color.text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": 320,
+                          "content": "name@example.com",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "comp-select",
+                  "name": "Select / Role",
+                  "reusable": true,
+                  "width": 360,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "select-label",
+                      "name": "Select Label",
+                      "fill": "$color.text",
+                      "content": "身分 / 角色",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "select-box",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "$color.surface",
+                      "cornerRadius": "$radius.md",
+                      "stroke": "$color.border",
+                      "strokeWidth": 1,
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "select-value",
+                          "name": "Select Value",
+                          "fill": "$color.text-muted",
+                          "content": "請選擇身分",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "select-chevron",
+                          "name": "Chevron",
+                          "fill": "$color.text-muted",
+                          "content": "▾",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "comp-checkbox",
+                  "name": "Checkbox / Interview",
+                  "reusable": true,
+                  "gap": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 4,
+                      "id": "checkbox-box",
+                      "fill": "$color.surface",
+                      "width": 20,
+                      "height": 20,
+                      "stroke": "$color.border",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "checkbox-label",
+                      "name": "Checkbox Label",
+                      "fill": "$color.text",
+                      "textGrowth": "fixed-width",
+                      "width": 320,
+                      "content": "我願意接受訪談，協助了解需求",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "form-error-demo",
+              "name": "Form Fields / Error State",
+              "width": 400,
+              "fill": "$color.error-bg",
+              "cornerRadius": "$radius.lg",
+              "layout": "vertical",
+              "gap": 20,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "error-demo-title",
+                  "name": "Error Demo Title",
+                  "fill": "$color.error",
+                  "content": "Error State Demo",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Fira Sans",
+                  "fontSize": 20,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "input-email-error",
+                  "name": "Input / Email Error",
+                  "width": 360,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "input-email-error-label",
+                      "name": "Input / Email Error label",
+                      "fill": "$color.text",
+                      "content": "Email *",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "input-email-error-input",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "$color.surface",
+                      "cornerRadius": "$radius.md",
+                      "stroke": "$color.error",
+                      "strokeWidth": 2,
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "input-email-error-placeholder",
+                          "name": "Input / Email Error placeholder",
+                          "fill": "$color.text",
+                          "textGrowth": "fixed-width",
+                          "width": 320,
+                          "content": "invalid-email",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "input-email-error-error",
+                      "name": "Input / Email Error error",
+                      "fill": "$color.error",
+                      "textGrowth": "fixed-width",
+                      "width": 360,
+                      "content": "請輸入有效的 Email 地址",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "alert-warning",
+                  "name": "Alert / Warning Mock",
+                  "width": "fill_container",
+                  "fill": "$color.warning-bg",
+                  "cornerRadius": "$radius.md",
+                  "gap": 10,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "alert-warning-text",
+                      "name": "Warning Text",
+                      "fill": "#92400E",
+                      "textGrowth": "fixed-width",
+                      "width": 320,
+                      "content": "⚠ 此版本為展示版，文案為 Mock 產生，尚未串接真實 AI API",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "sec-badges",
+          "name": "Section / Status Badges",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "sec-badge-title",
+              "name": "Badges Title",
+              "fill": "$color.text",
+              "content": "Components / Status Badges (leads.status)",
+              "lineHeight": 1.5,
+              "fontFamily": "Fira Sans",
+              "fontSize": 20,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "badge-row",
+              "name": "Badge Row",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "badge-new",
+                  "name": "Badge / 新名單",
+                  "reusable": true,
+                  "fill": "#EFF6FF",
+                  "cornerRadius": 9999,
+                  "padding": [
+                    4,
+                    10
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "badge-new-text",
+                      "name": "Badge / 新名單 text",
+                      "fill": "#2563EB",
+                      "content": "新名單",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "badge-high",
+                  "name": "Badge / 高意願",
+                  "reusable": true,
+                  "fill": "#FFF7ED",
+                  "cornerRadius": 9999,
+                  "padding": [
+                    4,
+                    10
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "badge-high-text",
+                      "name": "Badge / 高意願 text",
+                      "fill": "#C2410C",
+                      "content": "高意願",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "badge-contacted",
+                  "name": "Badge / 已聯絡",
+                  "reusable": true,
+                  "fill": "#F5F3FF",
+                  "cornerRadius": 9999,
+                  "padding": [
+                    4,
+                    10
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "badge-contacted-text",
+                      "name": "Badge / 已聯絡 text",
+                      "fill": "#7C3AED",
+                      "content": "已聯絡",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "badge-interviewed",
+                  "name": "Badge / 已訪談",
+                  "reusable": true,
+                  "fill": "#F0FDF4",
+                  "cornerRadius": 9999,
+                  "padding": [
+                    4,
+                    10
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "badge-interviewed-text",
+                      "name": "Badge / 已訪談 text",
+                      "fill": "#15803D",
+                      "content": "已訪談",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "badge-unfit",
+                  "name": "Badge / 不適合",
+                  "reusable": true,
+                  "fill": "#F1F5F9",
+                  "cornerRadius": 9999,
+                  "padding": [
+                    4,
+                    10
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "badge-unfit-text",
+                      "name": "Badge / 不適合 text",
+                      "fill": "#475569",
+                      "content": "不適合",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "sec-table",
+          "name": "Section / Table Row",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "sec-table-title",
+              "name": "Table Title",
+              "fill": "$color.text",
+              "content": "Components / Admin Table Row",
+              "lineHeight": 1.5,
+              "fontFamily": "Fira Sans",
+              "fontSize": 20,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "table-header",
+              "name": "Table Header",
+              "width": 960,
+              "height": 40,
+              "fill": "#F1F5F9",
+              "gap": 16,
+              "padding": [
+                0,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "th-0",
+                  "name": "Header 姓名",
+                  "fill": "$color.text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 120,
+                  "content": "姓名",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Fira Sans",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "th-1",
+                  "name": "Header Email",
+                  "fill": "$color.text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 240,
+                  "content": "Email",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Fira Sans",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "th-2",
+                  "name": "Header 身分",
+                  "fill": "$color.text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 100,
+                  "content": "身分",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Fira Sans",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "th-3",
+                  "name": "Header 狀態",
+                  "fill": "$color.text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 100,
+                  "content": "狀態",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Fira Sans",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "th-4",
+                  "name": "Header 建立時間",
+                  "fill": "$color.text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 160,
+                  "content": "建立時間",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Fira Sans",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "id": "comp-table-row",
+              "type": "ref",
+              "ref": "table-row-base",
+              "name": "Table Row / Lead"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "sec-breakpoints",
+          "name": "Section / Breakpoints",
+          "width": "fill_container",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "bp-desktop",
+              "name": "Breakpoint / Desktop",
+              "width": 400,
+              "fill": "$color.bg-alt",
+              "cornerRadius": "$radius.lg",
+              "stroke": "$color.secondary",
+              "strokeWidth": 2,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "bp-desktop-title",
+                  "name": "Desktop Title",
+                  "fill": "$color.secondary",
+                  "content": "Desktop ≥ 1024px",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Fira Sans",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "bp-desktop-desc",
+                  "name": "Desktop Desc",
+                  "fill": "$color.text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 360,
+                  "content": "Landing 多欄排版 · Admin 表格完整顯示 · Dashboard 3–4 欄網格",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Fira Sans",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "bp-mobile",
+              "name": "Breakpoint / Mobile",
+              "width": 375,
+              "fill": "$color.surface",
+              "cornerRadius": "$radius.lg",
+              "stroke": "$color.border",
+              "strokeWidth": 2,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "bp-mobile-title",
+                  "name": "Mobile Title",
+                  "fill": "$color.text",
+                  "content": "Mobile 375–767px",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Fira Sans",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "bp-mobile-desc",
+                  "name": "Mobile Desc",
+                  "fill": "$color.text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 320,
+                  "content": "單欄堆疊 · CTA 全寬 · 表格橫向捲動或卡片化",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Fira Sans",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "component-library",
+      "x": 1500,
+      "y": 0,
+      "name": "Component Library",
+      "width": 400,
+      "fill": "#E2E8F0",
+      "layout": "vertical",
+      "gap": 24,
+      "padding": 24,
+      "children": [
+        {
+          "type": "frame",
+          "id": "table-row-base",
+          "name": "Component / Table Row",
+          "reusable": true,
+          "width": 960,
+          "height": 56,
+          "fill": "$color.surface",
+          "stroke": "$color.border",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "gap": 16,
+          "padding": [
+            0,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "table-row-base-cell-0",
+              "name": "Component / Table Row cell 0",
+              "fill": "$color.text",
+              "textGrowth": "fixed-width",
+              "width": 120,
+              "content": "王小明",
+              "lineHeight": 1.5,
+              "fontFamily": "Fira Sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "table-row-base-cell-1",
+              "name": "Component / Table Row cell 1",
+              "fill": "$color.text-secondary",
+              "textGrowth": "fixed-width",
+              "width": 240,
+              "content": "ming@example.com",
+              "lineHeight": 1.5,
+              "fontFamily": "Fira Sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "table-row-base-cell-2",
+              "name": "Component / Table Row cell 2",
+              "fill": "$color.text-secondary",
+              "textGrowth": "fixed-width",
+              "width": 100,
+              "content": "工程師",
+              "lineHeight": 1.5,
+              "fontFamily": "Fira Sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "table-row-base-cell-3",
+              "name": "Component / Table Row cell 3",
+              "fill": "$color.text",
+              "textGrowth": "fixed-width",
+              "width": 100,
+              "content": "新名單",
+              "lineHeight": 1.5,
+              "fontFamily": "Fira Sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "table-row-base-cell-4",
+              "name": "Component / Table Row cell 4",
+              "fill": "$color.text-secondary",
+              "textGrowth": "fixed-width",
+              "width": 160,
+              "content": "2026/06/28 14:30",
+              "lineHeight": 1.5,
+              "fontFamily": "Fira Sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "color.primary": {
+      "type": "color",
+      "value": "#F97316"
+    },
+    "color.primary-hover": {
+      "type": "color",
+      "value": "#EA580C"
+    },
+    "color.primary-disabled": {
+      "type": "color",
+      "value": "#FDBA74"
+    },
+    "color.secondary": {
+      "type": "color",
+      "value": "#0EA5E9"
+    },
+    "color.bg": {
+      "type": "color",
+      "value": "#F8FAFC"
+    },
+    "color.bg-alt": {
+      "type": "color",
+      "value": "#F0F9FF"
+    },
+    "color.surface": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "color.text": {
+      "type": "color",
+      "value": "#0F172A"
+    },
+    "color.text-secondary": {
+      "type": "color",
+      "value": "#64748B"
+    },
+    "color.text-muted": {
+      "type": "color",
+      "value": "#94A3B8"
+    },
+    "color.border": {
+      "type": "color",
+      "value": "#E2E8F0"
+    },
+    "color.success": {
+      "type": "color",
+      "value": "#22C55E"
+    },
+    "color.success-bg": {
+      "type": "color",
+      "value": "#F0FDF4"
+    },
+    "color.error": {
+      "type": "color",
+      "value": "#EF4444"
+    },
+    "color.error-bg": {
+      "type": "color",
+      "value": "#FEF2F2"
+    },
+    "color.warning": {
+      "type": "color",
+      "value": "#F59E0B"
+    },
+    "color.warning-bg": {
+      "type": "color",
+      "value": "#FFFBEB"
+    },
+    "radius.sm": {
+      "type": "number",
+      "value": 6
+    },
+    "radius.md": {
+      "type": "number",
+      "value": 8
+    },
+    "radius.lg": {
+      "type": "number",
+      "value": 12
+    },
+    "spacing.1": {
+      "type": "number",
+      "value": 4
+    },
+    "spacing.2": {
+      "type": "number",
+      "value": 8
+    },
+    "spacing.3": {
+      "type": "number",
+      "value": 12
+    },
+    "spacing.4": {
+      "type": "number",
+      "value": 16
+    },
+    "spacing.6": {
+      "type": "number",
+      "value": 24
+    },
+    "spacing.8": {
+      "type": "number",
+      "value": 32
+    },
+    "font.display": {
+      "type": "number",
+      "value": 36
+    },
+    "font.h2": {
+      "type": "number",
+      "value": 28
+    },
+    "font.h3": {
+      "type": "number",
+      "value": 20
+    },
+    "font.body": {
+      "type": "number",
+      "value": 16
+    },
+    "font.label": {
+      "type": "number",
+      "value": 14
+    },
+    "font.caption": {
+      "type": "number",
+      "value": 12
+    }
+  },
+  "fileToken": "6799760e-e271-4f2f-94be-1dba22c7690a"
+}
