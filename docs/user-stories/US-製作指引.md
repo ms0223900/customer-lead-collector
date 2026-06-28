@@ -51,11 +51,15 @@ Commit
 3. **Dashboard 必有資料來源**：指標自 `leads` / `analytics_events` 計算  
 4. **一張 US = 一輪可 Commit 的交付單元**  
 
-### 檔案命名
+### 檔案命名與目錄
+
+US 依 Sprint 分資料夾存放：
 
 ```
-docs/user-stories/US-{編號}-{簡短標題}.md
+docs/user-stories/Sprint{N}/US-{編號}-{簡短標題}.md
 ```
+
+Sprint 0 為初始化（無正式 US），見 [`Sprint0/README.md`](./Sprint0/README.md)。
 
 新增 US 後，更新 [`README.md`](./README.md) 一覽表與依賴圖。
 
