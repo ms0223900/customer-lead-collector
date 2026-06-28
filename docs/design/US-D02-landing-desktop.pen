@@ -1132,6 +1132,7 @@
                   "width": 900,
                   "content": "加入等候名單",
                   "lineHeight": 1.5,
+                  "textAlign": "center",
                   "fontFamily": "Fira Sans",
                   "fontSize": 28,
                   "fontWeight": "700"
@@ -1209,7 +1210,7 @@
               "type": "frame",
               "id": "waitlist-form",
               "name": "Waitlist Form / Default",
-              "width": 720,
+              "width": 1279,
               "fill": "$color.surface",
               "cornerRadius": "$radius.xl",
               "stroke": "$color.border",
