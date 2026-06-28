@@ -69,7 +69,7 @@ Sprint 0 為初始化（無正式 US），見 [`Sprint0/README.md`](./Sprint0/RE
 
 | Sprint | 目標 | 對應 US | 建議 Commit |
 |--------|------|---------|-------------|
-| **0** 初始化 | 專案、spec、資料表 | 前置（支援 US-02/05/06/09/10） | `chore: initialize lead collection MVP project` |
+| **0** 初始化與圖面設計 | 專案、spec、資料表、設計稿 | US-D01～US-D10 | `chore: initialize…` / `design: …` |
 | **1** Landing + 表單 | 訪客看得到、填得了 | US-01, US-03, US-04 | `feat: add course landing page and waitlist form` |
 | **2** 名單持久化 | 資料存 DB、後台列表 | US-05, US-07 | `feat: persist waitlist leads and add admin leads list` |
 | **3** 事件 + Dashboard | 數據來自 DB | US-02, US-06, US-09 | `feat: track funnel events and add analytics dashboard` |
@@ -81,19 +81,27 @@ Sprint 0 為初始化（無正式 US），見 [`Sprint0/README.md`](./Sprint0/RE
 
 ## 4. 各 Sprint 操作細則
 
-### Sprint 0：專案初始化與資料模型
+### Sprint 0：專案初始化、資料模型與圖面設計
 
 **工作項目**：
 - 建立 Next.js 專案、Tailwind、Supabase 連線
 - 撰寫 [`docs/spec.md`](../spec.md)
 - 建立本目錄 US 文件
 - 建立 `leads`、`analytics_events` 表（可選 `landing_page_copy`）
+- **圖面設計**：依 [`Sprint0/README.md`](./Sprint0/README.md) 完成設計 US（`US-D01`～`US-D10`）
+
+**設計 US 建議順序**（Sprint 1 開發前至少完成粗體項）：
+- **US-D01** → **US-D02** → **US-D03** → **US-D04**（Landing + 表單）
+- **US-D06**（Sprint 2 前；US-D05 可簡化）
+- US-D07～D10：依後續 Sprint 排程
 
 **驗收檢查**：
 - [ ] `npm run dev` 可啟動
 - [ ] `spec.md` 含 MVP 範圍與 Won't Have
 - [ ] `leads` 欄位足以儲存等候名單
 - [ ] `analytics_events` 足以儲存四種事件類型
+- [ ] Sprint 1 前：US-D01～D04 設計稿可對照實作 US-01～04
+- [ ] Sprint 2 前：US-D06 設計稿可對照實作 US-07
 
 ---
 

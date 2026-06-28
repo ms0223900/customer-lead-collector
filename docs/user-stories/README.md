@@ -16,7 +16,7 @@
 
 | Sprint | 目標 | 資料夾 | 對應 US |
 |--------|------|--------|---------|
-| **0** 初始化 | 專案、spec、資料表 | [`Sprint0/`](./Sprint0/) | （無正式 US，見 Sprint0 README） |
+| **0** 初始化與圖面設計 | 專案、spec、資料表、設計稿 | [`Sprint0/`](./Sprint0/) | US-D01～US-D10（見 Sprint0 README） |
 | **1** Landing + 表單 | 訪客看得到、填得了 | [`Sprint1/`](./Sprint1/) | US-01, US-03, US-04 |
 | **2** 名單持久化 | 資料存 DB、後台列表 | [`Sprint2/`](./Sprint2/) | US-05, US-07 |
 | **3** 事件 + Dashboard | 數據來自 DB | [`Sprint3/`](./Sprint3/) | US-02, US-06, US-09 |
@@ -28,9 +28,28 @@
 
 ## US 一覽表
 
+### Sprint 0｜圖面設計（前置）
+
+完整清單、依賴圖與「Sprint 1+2 最少設計包」見 [`Sprint0/README.md`](./Sprint0/README.md)。
+
+| 編號 | 標題 | 優先級 | 支撐實作 |
+|------|------|--------|----------|
+| [US-D01](./Sprint0/US-D01-設計元件與Design-Tokens.md) | 設計元件與 Design Tokens | P0 | Sprint 1+ |
+| [US-D02](./Sprint0/US-D02-設計課程銷售頁桌機版.md) | 設計課程銷售頁（桌機版） | P0 | US-01、US-03 |
+| [US-D03](./Sprint0/US-D03-設計課程銷售頁手機版.md) | 設計課程銷售頁（手機版） | P0 | US-01 |
+| [US-D04](./Sprint0/US-D04-設計等候名單表單狀態稿.md) | 設計等候名單表單狀態稿 | P0 | US-04 |
+| [US-D05](./Sprint0/US-D05-設計後台框架.md) | 設計後台框架 | P1 | Sprint 2+ |
+| [US-D06](./Sprint0/US-D06-設計後台名單列表.md) | 設計後台名單列表 | P0 | US-07 |
+| [US-D07](./Sprint0/US-D07-設計Dashboard指標網格.md) | 設計 Dashboard 指標網格 | P1 | US-09 |
+| [US-D08](./Sprint0/US-D08-設計單筆名單詳情.md) | 設計單筆名單詳情 | P1 | US-08 |
+| [US-D09](./Sprint0/US-D09-設計AI文案產生器展示版.md) | 設計 AI 文案產生器展示版 | P1 | US-10 |
+| [US-D10](./Sprint0/US-D10-設計文案套用預覽.md) | 設計文案套用預覽 | P2 | US-11（可選） |
+
+### Sprint 1～6｜實作
+
 | 編號 | 標題 | Sprint | 優先級 | 依賴 | 簡要說明 |
 |------|------|--------|--------|------|----------|
-| [US-01](./Sprint1/US-01-訪客可以看到課程銷售頁.md) | 訪客可以看到課程銷售頁 | 1 | P0 | Sprint 0 | Landing Page 各區塊與 CTA |
+| [US-01](./Sprint1/US-01-訪客可以看到課程銷售頁.md) | 訪客可以看到課程銷售頁 | 1 | P0 | Sprint 0、US-D02～D03 | Landing Page 各區塊與 CTA |
 | [US-02](./Sprint3/US-02-系統會記錄銷售頁瀏覽事件.md) | 系統會記錄銷售頁瀏覽事件 | 3 | P0 | Sprint 0, US-01 | 寫入 `page_view` 事件 |
 | [US-03](./Sprint1/US-03-訪客可以點擊加入等候名單CTA.md) | 訪客可以點擊加入等候名單 CTA | 1 | P0 | US-01 | CTA 捲動 + `cta_click` |
 | [US-04](./Sprint1/US-04-訪客可以加入等候名單.md) | 訪客可以加入等候名單 | 1 | P0 | US-01, US-03 | 表單欄位、驗證、成功 UI |
@@ -48,7 +67,10 @@
 ## 依賴關係圖
 
 ```
-Sprint 0（spec、資料表）
+Sprint 0（spec、資料表、US-D01～D10 設計稿）
+    │
+    ├── US-D01 → US-D02/D03/D04（Landing + 表單設計）
+    │         → US-D05/D06（後台設計）
     │
     ├── US-01 ──┬── US-03 ── US-04 ── US-05 ── US-07 ── US-08
     │           │                      │
@@ -67,7 +89,13 @@ US-10 ── US-12（後續迭代）
 
 | US | 前置 | 原因 |
 |----|------|------|
-| US-01 | Sprint 0 | 需可啟動的 Next.js 專案 |
+| US-D01 | spec | 設計 Tokens 與元件 |
+| US-D02～D04 | US-D01 | Landing 與表單設計稿 |
+| US-D06 | US-D01 | 後台名單列表設計稿 |
+| US-D07～D10 | US-D05 等 | 後台延伸畫面（依 Sprint 選做） |
+| US-01 | Sprint 0、US-D02～D03 | 專案可啟動 + Landing 設計稿 |
+| US-04 | US-D04 | 表單狀態設計稿 |
+| US-07 | US-D06 | 名單列表設計稿 |
 | US-02 | Sprint 0, US-01 | 需 `analytics_events` 表與銷售頁路由 |
 | US-03 | US-01 | CTA 依附 Landing Page |
 | US-04 | US-01, US-03 | 表單區塊與 CTA 導向 |
@@ -84,8 +112,8 @@ US-10 ── US-12（後續迭代）
 
 ## 建議開發順序（Build Sprint 對照）
 
-### Wave 0 — 初始化（非正式 US）
-Sprint 0：專案、`spec.md`、資料表（`leads`、`analytics_events`）
+### Wave 0 — 初始化與圖面設計
+Sprint 0：專案、`spec.md`、資料表；**US-D01 → D02 → D03 → D04**（Sprint 1 前）；**US-D06**（Sprint 2 前）；其餘設計 US 依 Sprint 排程
 
 ### Wave 1 — 看得到、填得了（Sprint 1）
 - **平行可選**：無
