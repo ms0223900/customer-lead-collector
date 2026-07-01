@@ -18,13 +18,13 @@
   5. **API Error**：顯示「表單送出失敗，請稍後再試」或同等可讀繁中訊息
 
 **驗收條件**：
-- [ ] Default 狀態含 spec §6.2 全部欄位，Email 標示必填
-- [ ] Validation Error 有欄位級繁中錯誤提示樣式
-- [ ] Loading 狀態按鈕不可重複點擊的視覺表現
-- [ ] Success 文案與 spec §6.2 一致或標註引用 spec 原文
-- [ ] API Error 有全區或表單級錯誤提示，頁面不暗示整頁崩潰
-- [ ] 五種狀態皆引用 US-D01 表單元件
-- [ ] 稿面標註對應實作 US：US-04（Sprint 1）、US-05 成功 UI（Sprint 2）
+- [x] Default 狀態含 spec §6.2 全部欄位，Email 標示必填
+- [x] Validation Error 有欄位級繁中錯誤提示樣式
+- [x] Loading 狀態按鈕不可重複點擊的視覺表現
+- [x] Success 文案與 spec §6.2 一致或標註引用 spec 原文
+- [x] API Error 有全區或表單級錯誤提示，頁面不暗示整頁崩潰
+- [x] 五種狀態皆引用 US-D01 表單元件
+- [x] 稿面標註對應實作 US：US-04（Sprint 1）、US-05 成功 UI（Sprint 2）
 
 **依賴關係**：
 - US-D01：元件與 Design Tokens

@@ -1,0 +1,1933 @@
+{
+  "version": "2.13",
+  "variables": {
+    "color.primary": {
+      "type": "color",
+      "value": "#F97316"
+    },
+    "color.primary-hover": {
+      "type": "color",
+      "value": "#EA580C"
+    },
+    "color.primary-disabled": {
+      "type": "color",
+      "value": "#FDBA74"
+    },
+    "color.secondary": {
+      "type": "color",
+      "value": "#0EA5E9"
+    },
+    "color.bg": {
+      "type": "color",
+      "value": "#F8FAFC"
+    },
+    "color.bg-alt": {
+      "type": "color",
+      "value": "#F0F9FF"
+    },
+    "color.surface": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "color.text": {
+      "type": "color",
+      "value": "#0F172A"
+    },
+    "color.text-secondary": {
+      "type": "color",
+      "value": "#64748B"
+    },
+    "color.text-muted": {
+      "type": "color",
+      "value": "#94A3B8"
+    },
+    "color.border": {
+      "type": "color",
+      "value": "#E2E8F0"
+    },
+    "color.error": {
+      "type": "color",
+      "value": "#EF4444"
+    },
+    "color.error-bg": {
+      "type": "color",
+      "value": "#FEF2F2"
+    },
+    "color.success": {
+      "type": "color",
+      "value": "#22C55E"
+    },
+    "color.success-bg": {
+      "type": "color",
+      "value": "#F0FDF4"
+    },
+    "radius.md": {
+      "type": "number",
+      "value": 8
+    },
+    "radius.lg": {
+      "type": "number",
+      "value": 12
+    },
+    "radius.xl": {
+      "type": "number",
+      "value": 16
+    }
+  },
+  "children": [
+    {
+      "id": "form-states-page",
+      "name": "US-D04 Form States",
+      "type": "frame",
+      "x": 0,
+      "y": 0,
+      "width": 1900,
+      "layout": "vertical",
+      "gap": 32,
+      "padding": 40,
+      "fill": "$color.bg",
+      "children": [
+        {
+          "id": "meta-bar",
+          "name": "Design Meta",
+          "type": "frame",
+          "layout": "horizontal",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "padding": [
+            12,
+            20
+          ],
+          "fill": "#1E293B",
+          "children": [
+            {
+              "id": "meta-title",
+              "name": "Meta",
+              "type": "text",
+              "content": "US-D04 · 等候名單表單狀態稿",
+              "fontFamily": "Fira Sans",
+              "fontSize": 14,
+              "fontWeight": "600",
+              "fill": "#F8FAFC",
+              "lineHeight": 1.5,
+              "textGrowth": "auto"
+            },
+            {
+              "id": "meta-us",
+              "name": "Impl US",
+              "type": "text",
+              "content": "US-04（Sprint 1）· US-05 成功 UI（Sprint 2）",
+              "fontFamily": "Fira Sans",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "fill": "#94A3B8",
+              "lineHeight": 1.5,
+              "textGrowth": "auto"
+            }
+          ]
+        },
+        {
+          "id": "page-desc",
+          "name": "Desc",
+          "type": "text",
+          "content": "五種狀態並排 · 引用 US-D01 表單元件 · 不跳頁切換",
+          "fontFamily": "Fira Sans",
+          "fontSize": 14,
+          "fontWeight": "400",
+          "fill": "$color.text-secondary",
+          "lineHeight": 1.5,
+          "textGrowth": "auto"
+        },
+        {
+          "id": "states-row",
+          "name": "Form States Row",
+          "type": "frame",
+          "layout": "horizontal",
+          "gap": 24,
+          "width": "fill_container",
+          "children": [
+            {
+              "id": "state-default",
+              "name": "State / Default",
+              "type": "frame",
+              "layout": "vertical",
+              "gap": 12,
+              "width": 340,
+              "children": [
+                {
+                  "id": "state-default-label",
+                  "name": "State Label / 1 · Default",
+                  "type": "frame",
+                  "layout": "horizontal",
+                  "width": "fill_container",
+                  "padding": [
+                    8,
+                    12
+                  ],
+                  "cornerRadius": "$radius.md",
+                  "fill": "#1E293B",
+                  "children": [
+                    {
+                      "id": "state-default-label-text",
+                      "name": "Label",
+                      "type": "text",
+                      "content": "1 · Default",
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "fill": "#F8FAFC",
+                      "lineHeight": 1.5,
+                      "textGrowth": "auto"
+                    }
+                  ]
+                },
+                {
+                  "id": "default-card",
+                  "name": "Form Card",
+                  "type": "frame",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "width": "fill_container",
+                  "padding": 20,
+                  "cornerRadius": "$radius.lg",
+                  "fill": "$color.surface",
+                  "stroke": {
+                    "type": "color",
+                    "color": "$color.border"
+                  },
+                  "strokeWidth": 1,
+                  "children": [
+                    {
+                      "id": "d-name",
+                      "name": "Field / 姓名",
+                      "type": "frame",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "id": "d-name-label",
+                          "name": "Label",
+                          "type": "text",
+                          "content": "姓名",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "500",
+                          "fill": "$color.text",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "id": "d-name-input",
+                          "type": "frame",
+                          "layout": "horizontal",
+                          "alignItems": "center",
+                          "width": "fill_container",
+                          "height": 44,
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "cornerRadius": "$radius.md",
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": 1,
+                          "children": [
+                            {
+                              "id": "d-name-ph",
+                              "name": "Placeholder",
+                              "type": "text",
+                              "content": "請輸入您的姓名",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 16,
+                              "fontWeight": "400",
+                              "fill": "$color.text-muted",
+                              "lineHeight": 1.5,
+                              "textGrowth": "auto"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "d-email",
+                      "name": "Field / Email *",
+                      "type": "frame",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "id": "d-email-label",
+                          "name": "Label",
+                          "type": "text",
+                          "content": "Email *",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "500",
+                          "fill": "$color.text",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "id": "d-email-input",
+                          "type": "frame",
+                          "layout": "horizontal",
+                          "alignItems": "center",
+                          "width": "fill_container",
+                          "height": 44,
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "cornerRadius": "$radius.md",
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": 1,
+                          "children": [
+                            {
+                              "id": "d-email-ph",
+                              "name": "Placeholder",
+                              "type": "text",
+                              "content": "name@example.com",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 16,
+                              "fontWeight": "400",
+                              "fill": "$color.text-muted",
+                              "lineHeight": 1.5,
+                              "textGrowth": "auto"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "d-role",
+                      "name": "Field / 身分 / 角色",
+                      "type": "frame",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "id": "d-role-label",
+                          "name": "Label",
+                          "type": "text",
+                          "content": "身分 / 角色",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "500",
+                          "fill": "$color.text",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "id": "d-role-input",
+                          "type": "frame",
+                          "layout": "horizontal",
+                          "alignItems": "center",
+                          "width": "fill_container",
+                          "height": 44,
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "cornerRadius": "$radius.md",
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": 1,
+                          "children": [
+                            {
+                              "id": "d-role-ph",
+                              "name": "Placeholder",
+                              "type": "text",
+                              "content": "請選擇身分 ▾",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 16,
+                              "fontWeight": "400",
+                              "fill": "$color.text-muted",
+                              "lineHeight": 1.5,
+                              "textGrowth": "auto"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "d-product",
+                      "name": "Field / 最想用 AI 做出的產品",
+                      "type": "frame",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "id": "d-product-label",
+                          "name": "Label",
+                          "type": "text",
+                          "content": "最想用 AI 做出的產品",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "500",
+                          "fill": "$color.text",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "id": "d-product-input",
+                          "type": "frame",
+                          "layout": "horizontal",
+                          "alignItems": "center",
+                          "width": "fill_container",
+                          "height": 44,
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "cornerRadius": "$radius.md",
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": 1,
+                          "children": [
+                            {
+                              "id": "d-product-ph",
+                              "name": "Placeholder",
+                              "type": "text",
+                              "content": "例如：客戶名單收集系統",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 16,
+                              "fontWeight": "400",
+                              "fill": "$color.text-muted",
+                              "lineHeight": 1.5,
+                              "textGrowth": "auto"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "d-pain",
+                      "name": "Field / 目前卡關點",
+                      "type": "frame",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "id": "d-pain-label",
+                          "name": "Label",
+                          "type": "text",
+                          "content": "目前卡關點",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "500",
+                          "fill": "$color.text",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "id": "d-pain-input",
+                          "type": "frame",
+                          "layout": "horizontal",
+                          "alignItems": "center",
+                          "width": "fill_container",
+                          "height": 44,
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "cornerRadius": "$radius.md",
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": 1,
+                          "children": [
+                            {
+                              "id": "d-pain-ph",
+                              "name": "Placeholder",
+                              "type": "text",
+                              "content": "例如：不知道怎麼從 Spec 開始",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 16,
+                              "fontWeight": "400",
+                              "fill": "$color.text-muted",
+                              "lineHeight": 1.5,
+                              "textGrowth": "auto"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "d-checkbox-row",
+                      "name": "Checkbox Row",
+                      "type": "frame",
+                      "layout": "horizontal",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "id": "d-checkbox",
+                          "type": "rectangle",
+                          "width": 20,
+                          "height": 20,
+                          "cornerRadius": 4,
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": 2
+                        },
+                        {
+                          "id": "d-checkbox-label",
+                          "name": "Checkbox",
+                          "type": "text",
+                          "content": "我願意接受訪談，協助了解需求",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "400",
+                          "fill": "$color.text",
+                          "lineHeight": 1.5,
+                          "textGrowth": "fixed-width",
+                          "width": 260
+                        }
+                      ]
+                    },
+                    {
+                      "id": "d-submit",
+                      "name": "Submit",
+                      "type": "frame",
+                      "layout": "horizontal",
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                      "width": "fill_container",
+                      "height": 48,
+                      "padding": [
+                        0,
+                        24
+                      ],
+                      "cornerRadius": "$radius.md",
+                      "fill": "$color.primary",
+                      "opacity": 1,
+                      "children": [
+                        {
+                          "id": "d-submit-label",
+                          "name": "Submit label",
+                          "type": "text",
+                          "content": "送出等候名單",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 16,
+                          "fontWeight": "600",
+                          "fill": "#FFFFFF",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "state-validation",
+              "name": "State / Validation Error",
+              "type": "frame",
+              "layout": "vertical",
+              "gap": 12,
+              "width": 340,
+              "children": [
+                {
+                  "id": "state-validation-label",
+                  "name": "State Label / 2 · Validation Error",
+                  "type": "frame",
+                  "layout": "horizontal",
+                  "width": "fill_container",
+                  "padding": [
+                    8,
+                    12
+                  ],
+                  "cornerRadius": "$radius.md",
+                  "fill": "#1E293B",
+                  "children": [
+                    {
+                      "id": "state-validation-label-text",
+                      "name": "Label",
+                      "type": "text",
+                      "content": "2 · Validation Error",
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "fill": "#F8FAFC",
+                      "lineHeight": 1.5,
+                      "textGrowth": "auto"
+                    }
+                  ]
+                },
+                {
+                  "id": "validation-card",
+                  "name": "Form Card",
+                  "type": "frame",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "width": "fill_container",
+                  "padding": 20,
+                  "cornerRadius": "$radius.lg",
+                  "fill": "$color.surface",
+                  "stroke": {
+                    "type": "color",
+                    "color": "$color.border"
+                  },
+                  "strokeWidth": 1,
+                  "children": [
+                    {
+                      "id": "v-name",
+                      "name": "Field / 姓名",
+                      "type": "frame",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "id": "v-name-label",
+                          "name": "Label",
+                          "type": "text",
+                          "content": "姓名",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "500",
+                          "fill": "$color.text",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "id": "v-name-input",
+                          "type": "frame",
+                          "layout": "horizontal",
+                          "alignItems": "center",
+                          "width": "fill_container",
+                          "height": 44,
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "cornerRadius": "$radius.md",
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": 1,
+                          "children": [
+                            {
+                              "id": "v-name-ph",
+                              "name": "Placeholder",
+                              "type": "text",
+                              "content": "請輸入您的姓名",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 16,
+                              "fontWeight": "400",
+                              "fill": "$color.text-muted",
+                              "lineHeight": 1.5,
+                              "textGrowth": "auto"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "v-email",
+                      "name": "Field / Email *",
+                      "type": "frame",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "id": "v-email-label",
+                          "name": "Label",
+                          "type": "text",
+                          "content": "Email *",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "500",
+                          "fill": "$color.text",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "id": "v-email-input",
+                          "type": "frame",
+                          "layout": "horizontal",
+                          "alignItems": "center",
+                          "width": "fill_container",
+                          "height": 44,
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "cornerRadius": "$radius.md",
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.error"
+                          },
+                          "strokeWidth": 2,
+                          "children": [
+                            {
+                              "id": "v-email-ph",
+                              "name": "Placeholder",
+                              "type": "text",
+                              "content": "",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 16,
+                              "fontWeight": "400",
+                              "fill": "$color.text",
+                              "lineHeight": 1.5,
+                              "textGrowth": "auto"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "v-email-err",
+                          "name": "Error",
+                          "type": "text",
+                          "content": "請輸入有效的 Email 地址",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "fill": "$color.error",
+                          "lineHeight": 1.5,
+                          "textGrowth": "fixed-width",
+                          "width": 300
+                        }
+                      ]
+                    },
+                    {
+                      "id": "v-role",
+                      "name": "Field / 身分 / 角色",
+                      "type": "frame",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "id": "v-role-label",
+                          "name": "Label",
+                          "type": "text",
+                          "content": "身分 / 角色",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "500",
+                          "fill": "$color.text",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "id": "v-role-input",
+                          "type": "frame",
+                          "layout": "horizontal",
+                          "alignItems": "center",
+                          "width": "fill_container",
+                          "height": 44,
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "cornerRadius": "$radius.md",
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": 1,
+                          "children": [
+                            {
+                              "id": "v-role-ph",
+                              "name": "Placeholder",
+                              "type": "text",
+                              "content": "請選擇身分 ▾",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 16,
+                              "fontWeight": "400",
+                              "fill": "$color.text-muted",
+                              "lineHeight": 1.5,
+                              "textGrowth": "auto"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "v-product",
+                      "name": "Field / 最想用 AI 做出的產品",
+                      "type": "frame",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "id": "v-product-label",
+                          "name": "Label",
+                          "type": "text",
+                          "content": "最想用 AI 做出的產品",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "500",
+                          "fill": "$color.text",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "id": "v-product-input",
+                          "type": "frame",
+                          "layout": "horizontal",
+                          "alignItems": "center",
+                          "width": "fill_container",
+                          "height": 44,
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "cornerRadius": "$radius.md",
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": 1,
+                          "children": [
+                            {
+                              "id": "v-product-ph",
+                              "name": "Placeholder",
+                              "type": "text",
+                              "content": "例如：客戶名單收集系統",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 16,
+                              "fontWeight": "400",
+                              "fill": "$color.text-muted",
+                              "lineHeight": 1.5,
+                              "textGrowth": "auto"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "v-pain",
+                      "name": "Field / 目前卡關點",
+                      "type": "frame",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "id": "v-pain-label",
+                          "name": "Label",
+                          "type": "text",
+                          "content": "目前卡關點",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "500",
+                          "fill": "$color.text",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "id": "v-pain-input",
+                          "type": "frame",
+                          "layout": "horizontal",
+                          "alignItems": "center",
+                          "width": "fill_container",
+                          "height": 44,
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "cornerRadius": "$radius.md",
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": 1,
+                          "children": [
+                            {
+                              "id": "v-pain-ph",
+                              "name": "Placeholder",
+                              "type": "text",
+                              "content": "例如：不知道怎麼從 Spec 開始",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 16,
+                              "fontWeight": "400",
+                              "fill": "$color.text-muted",
+                              "lineHeight": 1.5,
+                              "textGrowth": "auto"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "v-checkbox-row",
+                      "type": "frame",
+                      "layout": "horizontal",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "id": "v-checkbox",
+                          "type": "rectangle",
+                          "width": 20,
+                          "height": 20,
+                          "cornerRadius": 4,
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": 2
+                        },
+                        {
+                          "id": "v-checkbox-label",
+                          "name": "Checkbox",
+                          "type": "text",
+                          "content": "我願意接受訪談，協助了解需求",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 13,
+                          "fontWeight": "400",
+                          "fill": "$color.text",
+                          "lineHeight": 1.5,
+                          "textGrowth": "fixed-width",
+                          "width": 240
+                        }
+                      ]
+                    },
+                    {
+                      "id": "v-submit",
+                      "name": "Submit",
+                      "type": "frame",
+                      "layout": "horizontal",
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                      "width": "fill_container",
+                      "height": 48,
+                      "padding": [
+                        0,
+                        24
+                      ],
+                      "cornerRadius": "$radius.md",
+                      "fill": "$color.primary",
+                      "opacity": 1,
+                      "children": [
+                        {
+                          "id": "v-submit-label",
+                          "name": "Submit label",
+                          "type": "text",
+                          "content": "送出等候名單",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 16,
+                          "fontWeight": "600",
+                          "fill": "#FFFFFF",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "state-loading",
+              "name": "State / Loading",
+              "type": "frame",
+              "layout": "vertical",
+              "gap": 12,
+              "width": 340,
+              "children": [
+                {
+                  "id": "state-loading-label",
+                  "name": "State Label / 3 · Loading",
+                  "type": "frame",
+                  "layout": "horizontal",
+                  "width": "fill_container",
+                  "padding": [
+                    8,
+                    12
+                  ],
+                  "cornerRadius": "$radius.md",
+                  "fill": "#1E293B",
+                  "children": [
+                    {
+                      "id": "state-loading-label-text",
+                      "name": "Label",
+                      "type": "text",
+                      "content": "3 · Loading",
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "fill": "#F8FAFC",
+                      "lineHeight": 1.5,
+                      "textGrowth": "auto"
+                    }
+                  ]
+                },
+                {
+                  "id": "loading-card",
+                  "name": "Form Card",
+                  "type": "frame",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "width": "fill_container",
+                  "padding": 20,
+                  "cornerRadius": "$radius.lg",
+                  "fill": "$color.surface",
+                  "stroke": {
+                    "type": "color",
+                    "color": "$color.border"
+                  },
+                  "strokeWidth": 1,
+                  "children": [
+                    {
+                      "id": "l-name",
+                      "name": "Field / 姓名",
+                      "type": "frame",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "id": "l-name-label",
+                          "name": "Label",
+                          "type": "text",
+                          "content": "姓名",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "500",
+                          "fill": "$color.text",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "id": "l-name-input",
+                          "type": "frame",
+                          "layout": "horizontal",
+                          "alignItems": "center",
+                          "width": "fill_container",
+                          "height": 44,
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "cornerRadius": "$radius.md",
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": 1,
+                          "children": [
+                            {
+                              "id": "l-name-ph",
+                              "name": "Placeholder",
+                              "type": "text",
+                              "content": "請輸入您的姓名",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 16,
+                              "fontWeight": "400",
+                              "fill": "$color.text-muted",
+                              "lineHeight": 1.5,
+                              "textGrowth": "auto"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "l-email",
+                      "name": "Field / Email *",
+                      "type": "frame",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "id": "l-email-label",
+                          "name": "Label",
+                          "type": "text",
+                          "content": "Email *",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "500",
+                          "fill": "$color.text",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "id": "l-email-input",
+                          "type": "frame",
+                          "layout": "horizontal",
+                          "alignItems": "center",
+                          "width": "fill_container",
+                          "height": 44,
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "cornerRadius": "$radius.md",
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": 1,
+                          "children": [
+                            {
+                              "id": "l-email-ph",
+                              "name": "Placeholder",
+                              "type": "text",
+                              "content": "name@example.com",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 16,
+                              "fontWeight": "400",
+                              "fill": "$color.text-muted",
+                              "lineHeight": 1.5,
+                              "textGrowth": "auto"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "l-role",
+                      "name": "Field / 身分 / 角色",
+                      "type": "frame",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "id": "l-role-label",
+                          "name": "Label",
+                          "type": "text",
+                          "content": "身分 / 角色",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "500",
+                          "fill": "$color.text",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "id": "l-role-input",
+                          "type": "frame",
+                          "layout": "horizontal",
+                          "alignItems": "center",
+                          "width": "fill_container",
+                          "height": 44,
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "cornerRadius": "$radius.md",
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": 1,
+                          "children": [
+                            {
+                              "id": "l-role-ph",
+                              "name": "Placeholder",
+                              "type": "text",
+                              "content": "請選擇身分 ▾",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 16,
+                              "fontWeight": "400",
+                              "fill": "$color.text-muted",
+                              "lineHeight": 1.5,
+                              "textGrowth": "auto"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "l-product",
+                      "name": "Field / 最想用 AI 做出的產品",
+                      "type": "frame",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "id": "l-product-label",
+                          "name": "Label",
+                          "type": "text",
+                          "content": "最想用 AI 做出的產品",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "500",
+                          "fill": "$color.text",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "id": "l-product-input",
+                          "type": "frame",
+                          "layout": "horizontal",
+                          "alignItems": "center",
+                          "width": "fill_container",
+                          "height": 44,
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "cornerRadius": "$radius.md",
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": 1,
+                          "children": [
+                            {
+                              "id": "l-product-ph",
+                              "name": "Placeholder",
+                              "type": "text",
+                              "content": "例如：客戶名單收集系統",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 16,
+                              "fontWeight": "400",
+                              "fill": "$color.text-muted",
+                              "lineHeight": 1.5,
+                              "textGrowth": "auto"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "l-pain",
+                      "name": "Field / 目前卡關點",
+                      "type": "frame",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "id": "l-pain-label",
+                          "name": "Label",
+                          "type": "text",
+                          "content": "目前卡關點",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "500",
+                          "fill": "$color.text",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "id": "l-pain-input",
+                          "type": "frame",
+                          "layout": "horizontal",
+                          "alignItems": "center",
+                          "width": "fill_container",
+                          "height": 44,
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "cornerRadius": "$radius.md",
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": 1,
+                          "children": [
+                            {
+                              "id": "l-pain-ph",
+                              "name": "Placeholder",
+                              "type": "text",
+                              "content": "例如：不知道怎麼從 Spec 開始",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 16,
+                              "fontWeight": "400",
+                              "fill": "$color.text-muted",
+                              "lineHeight": 1.5,
+                              "textGrowth": "auto"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "l-checkbox-row",
+                      "name": "Checkbox Row",
+                      "type": "frame",
+                      "layout": "horizontal",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "id": "l-checkbox",
+                          "type": "rectangle",
+                          "width": 20,
+                          "height": 20,
+                          "cornerRadius": 4,
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": 2
+                        },
+                        {
+                          "id": "l-checkbox-label",
+                          "name": "Checkbox",
+                          "type": "text",
+                          "content": "我願意接受訪談，協助了解需求",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "400",
+                          "fill": "$color.text",
+                          "lineHeight": 1.5,
+                          "textGrowth": "fixed-width",
+                          "width": 260
+                        }
+                      ]
+                    },
+                    {
+                      "id": "l-submit",
+                      "name": "Submit",
+                      "type": "frame",
+                      "layout": "horizontal",
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                      "width": "fill_container",
+                      "height": 48,
+                      "padding": [
+                        0,
+                        24
+                      ],
+                      "cornerRadius": "$radius.md",
+                      "fill": "$color.primary-disabled",
+                      "opacity": 0.7,
+                      "children": [
+                        {
+                          "id": "l-submit-label",
+                          "name": "Submit label",
+                          "type": "text",
+                          "content": "送出中…",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 16,
+                          "fontWeight": "600",
+                          "fill": "#FFFFFF",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "l-hint",
+                      "name": "Hint",
+                      "type": "text",
+                      "content": "按鈕 disabled，避免重複提交",
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 11,
+                      "fontWeight": "400",
+                      "fill": "$color.text-muted",
+                      "lineHeight": 1.5,
+                      "textGrowth": "fixed-width",
+                      "width": 300,
+                      "textAlign": "center"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "state-success",
+              "name": "State / Success",
+              "type": "frame",
+              "layout": "vertical",
+              "gap": 12,
+              "width": 340,
+              "children": [
+                {
+                  "id": "state-success-label",
+                  "name": "State Label / 4 · Success",
+                  "type": "frame",
+                  "layout": "horizontal",
+                  "width": "fill_container",
+                  "padding": [
+                    8,
+                    12
+                  ],
+                  "cornerRadius": "$radius.md",
+                  "fill": "#1E293B",
+                  "children": [
+                    {
+                      "id": "state-success-label-text",
+                      "name": "Label",
+                      "type": "text",
+                      "content": "4 · Success",
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "fill": "#F8FAFC",
+                      "lineHeight": 1.5,
+                      "textGrowth": "auto"
+                    }
+                  ]
+                },
+                {
+                  "id": "success-card",
+                  "name": "Success Card",
+                  "type": "frame",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "width": "fill_container",
+                  "padding": 20,
+                  "cornerRadius": "$radius.lg",
+                  "fill": "$color.success-bg",
+                  "stroke": {
+                    "type": "color",
+                    "color": "$color.success"
+                  },
+                  "strokeWidth": 2,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "success-icon",
+                      "type": "frame",
+                      "width": 48,
+                      "height": 48,
+                      "cornerRadius": 9999,
+                      "fill": "$color.success",
+                      "layout": "horizontal",
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "id": "success-check",
+                          "name": "Check",
+                          "type": "text",
+                          "content": "✓",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 24,
+                          "fontWeight": "700",
+                          "fill": "#FFFFFF",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "success-title",
+                      "name": "Success Title",
+                      "type": "text",
+                      "content": "加入成功！",
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 20,
+                      "fontWeight": "700",
+                      "fill": "#15803D",
+                      "lineHeight": 1.5,
+                      "textGrowth": "auto"
+                    },
+                    {
+                      "id": "success-body",
+                      "name": "Success Body",
+                      "type": "text",
+                      "content": "你已成功加入等候名單！課程開放時，我們會第一時間通知你。如果你願意接受訪談，我們可能會優先聯絡你了解需求。",
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 14,
+                      "fontWeight": "400",
+                      "fill": "$color.text-secondary",
+                      "lineHeight": 1.7,
+                      "textGrowth": "fixed-width",
+                      "width": 300,
+                      "textAlign": "center"
+                    },
+                    {
+                      "id": "success-ref",
+                      "name": "Spec Ref",
+                      "type": "text",
+                      "content": "（spec §6.2 原文）",
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 10,
+                      "fontWeight": "400",
+                      "fill": "$color.text-muted",
+                      "lineHeight": 1.5,
+                      "textGrowth": "auto"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "state-api-error",
+              "name": "State / API Error",
+              "type": "frame",
+              "layout": "vertical",
+              "gap": 12,
+              "width": 340,
+              "children": [
+                {
+                  "id": "state-api-error-label",
+                  "name": "State Label / 5 · API Error",
+                  "type": "frame",
+                  "layout": "horizontal",
+                  "width": "fill_container",
+                  "padding": [
+                    8,
+                    12
+                  ],
+                  "cornerRadius": "$radius.md",
+                  "fill": "#1E293B",
+                  "children": [
+                    {
+                      "id": "state-api-error-label-text",
+                      "name": "Label",
+                      "type": "text",
+                      "content": "5 · API Error",
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "fill": "#F8FAFC",
+                      "lineHeight": 1.5,
+                      "textGrowth": "auto"
+                    }
+                  ]
+                },
+                {
+                  "id": "api-error-banner",
+                  "name": "API Error Banner",
+                  "type": "frame",
+                  "layout": "horizontal",
+                  "width": "fill_container",
+                  "padding": 12,
+                  "cornerRadius": "$radius.md",
+                  "fill": "$color.error-bg",
+                  "stroke": {
+                    "type": "color",
+                    "color": "$color.error"
+                  },
+                  "strokeWidth": 1,
+                  "children": [
+                    {
+                      "id": "api-error-text",
+                      "name": "Error",
+                      "type": "text",
+                      "content": "表單送出失敗，請稍後再試",
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 13,
+                      "fontWeight": "400",
+                      "fill": "$color.error",
+                      "lineHeight": 1.5,
+                      "textGrowth": "fixed-width",
+                      "width": 276
+                    }
+                  ]
+                },
+                {
+                  "id": "api-card",
+                  "name": "Form Card",
+                  "type": "frame",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "width": "fill_container",
+                  "padding": 20,
+                  "cornerRadius": "$radius.lg",
+                  "fill": "$color.surface",
+                  "stroke": {
+                    "type": "color",
+                    "color": "$color.border"
+                  },
+                  "strokeWidth": 1,
+                  "children": [
+                    {
+                      "id": "a-name",
+                      "name": "Field / 姓名",
+                      "type": "frame",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "id": "a-name-label",
+                          "name": "Label",
+                          "type": "text",
+                          "content": "姓名",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "500",
+                          "fill": "$color.text",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "id": "a-name-input",
+                          "type": "frame",
+                          "layout": "horizontal",
+                          "alignItems": "center",
+                          "width": "fill_container",
+                          "height": 44,
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "cornerRadius": "$radius.md",
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": 1,
+                          "children": [
+                            {
+                              "id": "a-name-ph",
+                              "name": "Placeholder",
+                              "type": "text",
+                              "content": "請輸入您的姓名",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 16,
+                              "fontWeight": "400",
+                              "fill": "$color.text-muted",
+                              "lineHeight": 1.5,
+                              "textGrowth": "auto"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "a-email",
+                      "name": "Field / Email *",
+                      "type": "frame",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "id": "a-email-label",
+                          "name": "Label",
+                          "type": "text",
+                          "content": "Email *",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "500",
+                          "fill": "$color.text",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "id": "a-email-input",
+                          "type": "frame",
+                          "layout": "horizontal",
+                          "alignItems": "center",
+                          "width": "fill_container",
+                          "height": 44,
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "cornerRadius": "$radius.md",
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": 1,
+                          "children": [
+                            {
+                              "id": "a-email-ph",
+                              "name": "Placeholder",
+                              "type": "text",
+                              "content": "name@example.com",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 16,
+                              "fontWeight": "400",
+                              "fill": "$color.text-muted",
+                              "lineHeight": 1.5,
+                              "textGrowth": "auto"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "a-role",
+                      "name": "Field / 身分 / 角色",
+                      "type": "frame",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "id": "a-role-label",
+                          "name": "Label",
+                          "type": "text",
+                          "content": "身分 / 角色",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "500",
+                          "fill": "$color.text",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "id": "a-role-input",
+                          "type": "frame",
+                          "layout": "horizontal",
+                          "alignItems": "center",
+                          "width": "fill_container",
+                          "height": 44,
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "cornerRadius": "$radius.md",
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": 1,
+                          "children": [
+                            {
+                              "id": "a-role-ph",
+                              "name": "Placeholder",
+                              "type": "text",
+                              "content": "請選擇身分 ▾",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 16,
+                              "fontWeight": "400",
+                              "fill": "$color.text-muted",
+                              "lineHeight": 1.5,
+                              "textGrowth": "auto"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "a-product",
+                      "name": "Field / 最想用 AI 做出的產品",
+                      "type": "frame",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "id": "a-product-label",
+                          "name": "Label",
+                          "type": "text",
+                          "content": "最想用 AI 做出的產品",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "500",
+                          "fill": "$color.text",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "id": "a-product-input",
+                          "type": "frame",
+                          "layout": "horizontal",
+                          "alignItems": "center",
+                          "width": "fill_container",
+                          "height": 44,
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "cornerRadius": "$radius.md",
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": 1,
+                          "children": [
+                            {
+                              "id": "a-product-ph",
+                              "name": "Placeholder",
+                              "type": "text",
+                              "content": "例如：客戶名單收集系統",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 16,
+                              "fontWeight": "400",
+                              "fill": "$color.text-muted",
+                              "lineHeight": 1.5,
+                              "textGrowth": "auto"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "a-pain",
+                      "name": "Field / 目前卡關點",
+                      "type": "frame",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "id": "a-pain-label",
+                          "name": "Label",
+                          "type": "text",
+                          "content": "目前卡關點",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "500",
+                          "fill": "$color.text",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "id": "a-pain-input",
+                          "type": "frame",
+                          "layout": "horizontal",
+                          "alignItems": "center",
+                          "width": "fill_container",
+                          "height": 44,
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "cornerRadius": "$radius.md",
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": 1,
+                          "children": [
+                            {
+                              "id": "a-pain-ph",
+                              "name": "Placeholder",
+                              "type": "text",
+                              "content": "例如：不知道怎麼從 Spec 開始",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 16,
+                              "fontWeight": "400",
+                              "fill": "$color.text-muted",
+                              "lineHeight": 1.5,
+                              "textGrowth": "auto"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "a-checkbox-row",
+                      "name": "Checkbox Row",
+                      "type": "frame",
+                      "layout": "horizontal",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "id": "a-checkbox",
+                          "type": "rectangle",
+                          "width": 20,
+                          "height": 20,
+                          "cornerRadius": 4,
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": 2
+                        },
+                        {
+                          "id": "a-checkbox-label",
+                          "name": "Checkbox",
+                          "type": "text",
+                          "content": "我願意接受訪談，協助了解需求",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "400",
+                          "fill": "$color.text",
+                          "lineHeight": 1.5,
+                          "textGrowth": "fixed-width",
+                          "width": 260
+                        }
+                      ]
+                    },
+                    {
+                      "id": "a-submit",
+                      "name": "Submit",
+                      "type": "frame",
+                      "layout": "horizontal",
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                      "width": "fill_container",
+                      "height": 48,
+                      "padding": [
+                        0,
+                        24
+                      ],
+                      "cornerRadius": "$radius.md",
+                      "fill": "$color.primary",
+                      "opacity": 1,
+                      "children": [
+                        {
+                          "id": "a-submit-label",
+                          "name": "Submit label",
+                          "type": "text",
+                          "content": "送出等候名單",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 16,
+                          "fontWeight": "600",
+                          "fill": "#FFFFFF",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "api-note",
+                  "name": "Note",
+                  "type": "text",
+                  "content": "表單級錯誤提示，頁面不崩潰",
+                  "fontFamily": "Fira Sans",
+                  "fontSize": 11,
+                  "fontWeight": "400",
+                  "fill": "$color.text-muted",
+                  "lineHeight": 1.5,
+                  "textGrowth": "fixed-width",
+                  "width": 300
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
