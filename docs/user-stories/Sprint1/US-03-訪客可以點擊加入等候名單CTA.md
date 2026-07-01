@@ -16,11 +16,11 @@
   - `metadata`（可選）：CTA 位置，例如 `hero` / `footer`
 
 **驗收條件**：
-- [ ] Hero 區塊有明顯「加入等候名單」CTA 按鈕
-- [ ] 點擊 CTA 後，頁面捲動至等候名單表單，或表單區塊可見
-- [ ] 點擊 CTA 時，系統建立一筆 `analytics_events` 資料
-- [ ] 事件的 `event_type` 為 `cta_click`
-- [ ] 事件包含 `page`、`session_id`、`created_at`
+- [x] Hero 區塊有明顯「加入等候名單」CTA 按鈕
+- [x] 點擊 CTA 後，頁面捲動至等候名單表單，或表單區塊可見
+- [ ] 點擊 CTA 時，系統建立一筆 `analytics_events` 資料（Sprint 3）
+- [ ] 事件的 `event_type` 為 `cta_click`（Sprint 3）
+- [ ] 事件包含 `page`、`session_id`、`created_at`（Sprint 3）
 
 **依賴關係**：
 - US-01：Landing Page 與 CTA 已存在
