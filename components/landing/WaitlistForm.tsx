@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 import { ROLE_OPTIONS } from "@/lib/landing/content";
-import { submitWaitlist } from "@/lib/landing/submit-waitlist";
+import { submitWaitlistAction } from "@/app/actions/submit-waitlist";
 import {
   API_ERROR_MSG,
   EMAIL_ERROR_MSG,
@@ -51,7 +51,7 @@ export function WaitlistForm() {
     setStatus("loading");
 
     try {
-      await submitWaitlist(form);
+      await submitWaitlistAction(form);
       setStatus("success");
     } catch {
       setStatus("api_error");
