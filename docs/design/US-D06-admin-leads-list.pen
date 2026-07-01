@@ -1,0 +1,1827 @@
+{
+  "version": "2.13",
+  "variables": {
+    "color.primary": {
+      "type": "color",
+      "value": "#F97316"
+    },
+    "color.primary-hover": {
+      "type": "color",
+      "value": "#EA580C"
+    },
+    "color.primary-disabled": {
+      "type": "color",
+      "value": "#FDBA74"
+    },
+    "color.secondary": {
+      "type": "color",
+      "value": "#0EA5E9"
+    },
+    "color.bg": {
+      "type": "color",
+      "value": "#F8FAFC"
+    },
+    "color.bg-alt": {
+      "type": "color",
+      "value": "#F0F9FF"
+    },
+    "color.surface": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "color.text": {
+      "type": "color",
+      "value": "#0F172A"
+    },
+    "color.text-secondary": {
+      "type": "color",
+      "value": "#64748B"
+    },
+    "color.text-muted": {
+      "type": "color",
+      "value": "#94A3B8"
+    },
+    "color.border": {
+      "type": "color",
+      "value": "#E2E8F0"
+    },
+    "color.error": {
+      "type": "color",
+      "value": "#EF4444"
+    },
+    "color.error-bg": {
+      "type": "color",
+      "value": "#FEF2F2"
+    },
+    "color.success": {
+      "type": "color",
+      "value": "#22C55E"
+    },
+    "color.success-bg": {
+      "type": "color",
+      "value": "#F0FDF4"
+    },
+    "radius.md": {
+      "type": "number",
+      "value": 8
+    },
+    "radius.lg": {
+      "type": "number",
+      "value": 12
+    },
+    "radius.xl": {
+      "type": "number",
+      "value": 16
+    }
+  },
+  "children": [
+    {
+      "id": "page",
+      "name": "US-D06 Admin Leads List",
+      "type": "frame",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "layout": "vertical",
+      "gap": 48,
+      "padding": 40,
+      "fill": "$color.bg",
+      "children": [
+        {
+          "id": "meta-bar",
+          "name": "Design Meta",
+          "type": "frame",
+          "layout": "horizontal",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "padding": [
+            12,
+            20
+          ],
+          "fill": "#1E293B",
+          "children": [
+            {
+              "id": "meta-title",
+              "name": "Meta",
+              "type": "text",
+              "content": "US-D06 · 後台名單列表",
+              "fontFamily": "Fira Sans",
+              "fontSize": 14,
+              "fontWeight": "600",
+              "fill": "#F8FAFC",
+              "lineHeight": 1.5,
+              "textGrowth": "auto"
+            },
+            {
+              "id": "meta-us",
+              "name": "Impl US",
+              "type": "text",
+              "content": "實作：US-07 · 路由 /admin · leads 五欄",
+              "fontFamily": "Fira Sans",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "fill": "#94A3B8",
+              "lineHeight": 1.5,
+              "textGrowth": "auto"
+            }
+          ]
+        },
+        {
+          "id": "page-desc",
+          "name": "Desc",
+          "type": "text",
+          "content": "三種變體 · 引用 US-D01 Badge / 表格列 · US-D05 簡化版 Shell",
+          "fontFamily": "Fira Sans",
+          "fontSize": 14,
+          "fontWeight": "400",
+          "fill": "$color.text-secondary",
+          "lineHeight": 1.5,
+          "textGrowth": "auto"
+        },
+        {
+          "id": "variant-data",
+          "name": "Variant / With Data",
+          "type": "frame",
+          "layout": "vertical",
+          "width": "fill_container",
+          "gap": 0,
+          "children": [
+            {
+              "id": "v-data-label",
+              "name": "Variant Label / 1 · 有資料（最新在上）",
+              "type": "frame",
+              "layout": "horizontal",
+              "width": "fill_container",
+              "padding": [
+                10,
+                16
+              ],
+              "fill": "#334155",
+              "cornerRadius": [
+                8,
+                8,
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "id": "v-data-label-text",
+                  "name": "Label",
+                  "type": "text",
+                  "content": "1 · 有資料（最新在上）",
+                  "fontFamily": "Fira Sans",
+                  "fontSize": 13,
+                  "fontWeight": "600",
+                  "fill": "#F8FAFC",
+                  "lineHeight": 1.5,
+                  "textGrowth": "auto"
+                }
+              ]
+            },
+            {
+              "id": "data-shell",
+              "name": "Admin Shell",
+              "type": "frame",
+              "layout": "vertical",
+              "width": "fill_container",
+              "cornerRadius": "$radius.lg",
+              "fill": "$color.surface",
+              "stroke": {
+                "type": "color",
+                "color": "$color.border"
+              },
+              "strokeWidth": 1,
+              "clip": true,
+              "children": [
+                {
+                  "id": "data-topbar",
+                  "name": "Admin Topbar",
+                  "type": "frame",
+                  "layout": "horizontal",
+                  "width": "fill_container",
+                  "height": 56,
+                  "padding": [
+                    0,
+                    24
+                  ],
+                  "fill": "#1E293B",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "data-brand",
+                      "name": "Brand",
+                      "type": "text",
+                      "content": "Lead Collector · 管理後台",
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 14,
+                      "fontWeight": "600",
+                      "fill": "#F8FAFC",
+                      "lineHeight": 1.5,
+                      "textGrowth": "auto"
+                    },
+                    {
+                      "id": "data-route",
+                      "name": "Route",
+                      "type": "text",
+                      "content": "/admin",
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                      "fill": "#94A3B8",
+                      "lineHeight": 1.5,
+                      "textGrowth": "auto"
+                    }
+                  ]
+                },
+                {
+                  "id": "data-nav",
+                  "name": "Admin Nav",
+                  "type": "frame",
+                  "layout": "horizontal",
+                  "width": "fill_container",
+                  "padding": [
+                    0,
+                    24
+                  ],
+                  "gap": 4,
+                  "fill": "$color.bg",
+                  "stroke": {
+                    "type": "color",
+                    "color": "$color.border"
+                  },
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "children": [
+                    {
+                      "id": "data-nav-leads",
+                      "name": "Nav / 名單管理",
+                      "type": "frame",
+                      "layout": "horizontal",
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "id": "data-nav-leads-text",
+                          "name": "Nav Label",
+                          "type": "text",
+                          "content": "名單管理",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "600",
+                          "fill": "$color.secondary",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "data-nav-dashboard",
+                      "name": "Nav / Dashboard",
+                      "type": "frame",
+                      "layout": "horizontal",
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "id": "data-nav-dashboard-text",
+                          "name": "Nav Label",
+                          "type": "text",
+                          "content": "Dashboard",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "400",
+                          "fill": "$color.text-muted",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "data-nav-ai",
+                      "name": "Nav / AI 文案",
+                      "type": "frame",
+                      "layout": "horizontal",
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "id": "data-nav-ai-text",
+                          "name": "Nav Label",
+                          "type": "text",
+                          "content": "AI 文案",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "400",
+                          "fill": "$color.text-muted",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "data-main",
+                  "name": "Main Content",
+                  "type": "frame",
+                  "layout": "vertical",
+                  "width": "fill_container",
+                  "padding": 32,
+                  "gap": 24,
+                  "fill": "$color.bg",
+                  "children": [
+                    {
+                      "id": "data-header",
+                      "name": "Page Header",
+                      "type": "frame",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "id": "data-title",
+                          "name": "Title",
+                          "type": "text",
+                          "content": "等候名單",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 24,
+                          "fontWeight": "700",
+                          "fill": "$color.text",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "id": "data-sub",
+                          "name": "Subtitle",
+                          "type": "text",
+                          "content": "共 5 筆 · 資料來源 leads 表",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "400",
+                          "fill": "$color.text-secondary",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "data-table",
+                      "name": "Leads Table",
+                      "type": "frame",
+                      "layout": "vertical",
+                      "width": "fill_container",
+                      "cornerRadius": "$radius.md",
+                      "stroke": {
+                        "type": "color",
+                        "color": "$color.border"
+                      },
+                      "strokeWidth": 1,
+                      "clip": true,
+                      "children": [
+                        {
+                          "id": "data-thead",
+                          "name": "Table Header",
+                          "type": "frame",
+                          "layout": "horizontal",
+                          "width": "fill_container",
+                          "height": 44,
+                          "padding": [
+                            0,
+                            16
+                          ],
+                          "gap": 12,
+                          "fill": "#F1F5F9",
+                          "cornerRadius": [
+                            8,
+                            8,
+                            0,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "id": "data-th-name",
+                              "name": "Header 姓名",
+                              "type": "text",
+                              "content": "姓名",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 12,
+                              "fontWeight": "600",
+                              "fill": "$color.text-secondary",
+                              "lineHeight": 1.5,
+                              "textGrowth": "fixed-width",
+                              "width": 140
+                            },
+                            {
+                              "id": "data-th-email",
+                              "name": "Header Email",
+                              "type": "text",
+                              "content": "Email",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 12,
+                              "fontWeight": "600",
+                              "fill": "$color.text-secondary",
+                              "lineHeight": 1.5,
+                              "textGrowth": "fixed-width",
+                              "width": 260
+                            },
+                            {
+                              "id": "data-th-role",
+                              "name": "Header 身分",
+                              "type": "text",
+                              "content": "身分",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 12,
+                              "fontWeight": "600",
+                              "fill": "$color.text-secondary",
+                              "lineHeight": 1.5,
+                              "textGrowth": "fixed-width",
+                              "width": 120
+                            },
+                            {
+                              "id": "data-th-status",
+                              "name": "Header 狀態",
+                              "type": "text",
+                              "content": "狀態",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 12,
+                              "fontWeight": "600",
+                              "fill": "$color.text-secondary",
+                              "lineHeight": 1.5,
+                              "textGrowth": "fixed-width",
+                              "width": 110
+                            },
+                            {
+                              "id": "data-th-created",
+                              "name": "Header 建立時間",
+                              "type": "text",
+                              "content": "建立時間",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 12,
+                              "fontWeight": "600",
+                              "fill": "$color.text-secondary",
+                              "lineHeight": 1.5,
+                              "textGrowth": "fixed-width",
+                              "width": 160
+                            },
+                            {
+                              "id": "data-th-action",
+                              "name": "Header Action",
+                              "type": "text",
+                              "content": "",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 16,
+                              "fontWeight": "400",
+                              "fill": "$color.text",
+                              "lineHeight": 1.5,
+                              "textGrowth": "auto",
+                              "width": 32
+                            }
+                          ]
+                        },
+                        {
+                          "id": "data-r0-row",
+                          "name": "Table Row / 王小明",
+                          "type": "frame",
+                          "layout": "horizontal",
+                          "alignItems": "center",
+                          "width": "fill_container",
+                          "height": 56,
+                          "padding": [
+                            0,
+                            16
+                          ],
+                          "gap": 12,
+                          "fill": "#F0F9FF",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": {
+                            "bottom": 1
+                          },
+                          "children": [
+                            {
+                              "id": "data-r0-name",
+                              "name": "Name",
+                              "type": "text",
+                              "content": "王小明",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 14,
+                              "fontWeight": "600",
+                              "fill": "$color.secondary",
+                              "lineHeight": 1.5,
+                              "textGrowth": "fixed-width",
+                              "width": 140
+                            },
+                            {
+                              "id": "data-r0-email",
+                              "name": "Email",
+                              "type": "text",
+                              "content": "ming@example.com",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 14,
+                              "fontWeight": "400",
+                              "fill": "$color.text-secondary",
+                              "lineHeight": 1.5,
+                              "textGrowth": "fixed-width",
+                              "width": 260
+                            },
+                            {
+                              "id": "data-r0-role",
+                              "name": "Role",
+                              "type": "text",
+                              "content": "工程師",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 14,
+                              "fontWeight": "400",
+                              "fill": "$color.text-secondary",
+                              "lineHeight": 1.5,
+                              "textGrowth": "fixed-width",
+                              "width": 120
+                            },
+                            {
+                              "id": "data-r0-status-wrap",
+                              "name": "Status Cell",
+                              "type": "frame",
+                              "width": 110,
+                              "layout": "horizontal",
+                              "children": [
+                                {
+                                  "id": "data-r0-badge",
+                                  "name": "Badge / 新名單",
+                                  "type": "frame",
+                                  "layout": "horizontal",
+                                  "alignItems": "center",
+                                  "justifyContent": "center",
+                                  "padding": [
+                                    4,
+                                    10
+                                  ],
+                                  "cornerRadius": 9999,
+                                  "fill": "#EFF6FF",
+                                  "children": [
+                                    {
+                                      "id": "data-r0-badge-text",
+                                      "name": "Badge Text",
+                                      "type": "text",
+                                      "content": "新名單",
+                                      "fontFamily": "Fira Sans",
+                                      "fontSize": 12,
+                                      "fontWeight": "500",
+                                      "fill": "#2563EB",
+                                      "lineHeight": 1.5,
+                                      "textGrowth": "auto"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "id": "data-r0-created",
+                              "name": "Created",
+                              "type": "text",
+                              "content": "2026/06/28 14:30",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 13,
+                              "fontWeight": "400",
+                              "fill": "$color.text-muted",
+                              "lineHeight": 1.5,
+                              "textGrowth": "fixed-width",
+                              "width": 160
+                            },
+                            {
+                              "id": "data-r0-chevron",
+                              "name": "Chevron",
+                              "type": "text",
+                              "content": "›",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 18,
+                              "fontWeight": "400",
+                              "fill": "$color.text-muted",
+                              "lineHeight": 1.5,
+                              "textGrowth": "auto",
+                              "width": 32
+                            }
+                          ]
+                        },
+                        {
+                          "id": "data-r1-row",
+                          "name": "Table Row / 李美玲",
+                          "type": "frame",
+                          "layout": "horizontal",
+                          "alignItems": "center",
+                          "width": "fill_container",
+                          "height": 56,
+                          "padding": [
+                            0,
+                            16
+                          ],
+                          "gap": 12,
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": {
+                            "bottom": 1
+                          },
+                          "children": [
+                            {
+                              "id": "data-r1-name",
+                              "name": "Name",
+                              "type": "text",
+                              "content": "李美玲",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 14,
+                              "fontWeight": "400",
+                              "fill": "$color.text",
+                              "lineHeight": 1.5,
+                              "textGrowth": "fixed-width",
+                              "width": 140
+                            },
+                            {
+                              "id": "data-r1-email",
+                              "name": "Email",
+                              "type": "text",
+                              "content": "mei@example.com",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 14,
+                              "fontWeight": "400",
+                              "fill": "$color.text-secondary",
+                              "lineHeight": 1.5,
+                              "textGrowth": "fixed-width",
+                              "width": 260
+                            },
+                            {
+                              "id": "data-r1-role",
+                              "name": "Role",
+                              "type": "text",
+                              "content": "產品經理",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 14,
+                              "fontWeight": "400",
+                              "fill": "$color.text-secondary",
+                              "lineHeight": 1.5,
+                              "textGrowth": "fixed-width",
+                              "width": 120
+                            },
+                            {
+                              "id": "data-r1-status-wrap",
+                              "name": "Status Cell",
+                              "type": "frame",
+                              "width": 110,
+                              "layout": "horizontal",
+                              "children": [
+                                {
+                                  "id": "data-r1-badge",
+                                  "name": "Badge / 高意願",
+                                  "type": "frame",
+                                  "layout": "horizontal",
+                                  "alignItems": "center",
+                                  "justifyContent": "center",
+                                  "padding": [
+                                    4,
+                                    10
+                                  ],
+                                  "cornerRadius": 9999,
+                                  "fill": "#FFF7ED",
+                                  "children": [
+                                    {
+                                      "id": "data-r1-badge-text",
+                                      "name": "Badge Text",
+                                      "type": "text",
+                                      "content": "高意願",
+                                      "fontFamily": "Fira Sans",
+                                      "fontSize": 12,
+                                      "fontWeight": "500",
+                                      "fill": "#C2410C",
+                                      "lineHeight": 1.5,
+                                      "textGrowth": "auto"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "id": "data-r1-created",
+                              "name": "Created",
+                              "type": "text",
+                              "content": "2026/06/27 10:15",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 13,
+                              "fontWeight": "400",
+                              "fill": "$color.text-muted",
+                              "lineHeight": 1.5,
+                              "textGrowth": "fixed-width",
+                              "width": 160
+                            },
+                            {
+                              "id": "data-r1-chevron",
+                              "name": "Chevron",
+                              "type": "text",
+                              "content": "",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 18,
+                              "fontWeight": "400",
+                              "fill": "$color.text-muted",
+                              "lineHeight": 1.5,
+                              "textGrowth": "auto",
+                              "width": 32
+                            }
+                          ]
+                        },
+                        {
+                          "id": "data-r2-row",
+                          "name": "Table Row / 陳大文",
+                          "type": "frame",
+                          "layout": "horizontal",
+                          "alignItems": "center",
+                          "width": "fill_container",
+                          "height": 56,
+                          "padding": [
+                            0,
+                            16
+                          ],
+                          "gap": 12,
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": {
+                            "bottom": 1
+                          },
+                          "children": [
+                            {
+                              "id": "data-r2-name",
+                              "name": "Name",
+                              "type": "text",
+                              "content": "陳大文",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 14,
+                              "fontWeight": "400",
+                              "fill": "$color.text",
+                              "lineHeight": 1.5,
+                              "textGrowth": "fixed-width",
+                              "width": 140
+                            },
+                            {
+                              "id": "data-r2-email",
+                              "name": "Email",
+                              "type": "text",
+                              "content": "chen@example.com",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 14,
+                              "fontWeight": "400",
+                              "fill": "$color.text-secondary",
+                              "lineHeight": 1.5,
+                              "textGrowth": "fixed-width",
+                              "width": 260
+                            },
+                            {
+                              "id": "data-r2-role",
+                              "name": "Role",
+                              "type": "text",
+                              "content": "設計師",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 14,
+                              "fontWeight": "400",
+                              "fill": "$color.text-secondary",
+                              "lineHeight": 1.5,
+                              "textGrowth": "fixed-width",
+                              "width": 120
+                            },
+                            {
+                              "id": "data-r2-status-wrap",
+                              "name": "Status Cell",
+                              "type": "frame",
+                              "width": 110,
+                              "layout": "horizontal",
+                              "children": [
+                                {
+                                  "id": "data-r2-badge",
+                                  "name": "Badge / 已聯絡",
+                                  "type": "frame",
+                                  "layout": "horizontal",
+                                  "alignItems": "center",
+                                  "justifyContent": "center",
+                                  "padding": [
+                                    4,
+                                    10
+                                  ],
+                                  "cornerRadius": 9999,
+                                  "fill": "#F5F3FF",
+                                  "children": [
+                                    {
+                                      "id": "data-r2-badge-text",
+                                      "name": "Badge Text",
+                                      "type": "text",
+                                      "content": "已聯絡",
+                                      "fontFamily": "Fira Sans",
+                                      "fontSize": 12,
+                                      "fontWeight": "500",
+                                      "fill": "#7C3AED",
+                                      "lineHeight": 1.5,
+                                      "textGrowth": "auto"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "id": "data-r2-created",
+                              "name": "Created",
+                              "type": "text",
+                              "content": "2026/06/26 09:00",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 13,
+                              "fontWeight": "400",
+                              "fill": "$color.text-muted",
+                              "lineHeight": 1.5,
+                              "textGrowth": "fixed-width",
+                              "width": 160
+                            },
+                            {
+                              "id": "data-r2-chevron",
+                              "name": "Chevron",
+                              "type": "text",
+                              "content": "",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 18,
+                              "fontWeight": "400",
+                              "fill": "$color.text-muted",
+                              "lineHeight": 1.5,
+                              "textGrowth": "auto",
+                              "width": 32
+                            }
+                          ]
+                        },
+                        {
+                          "id": "data-r3-row",
+                          "name": "Table Row / 張小華",
+                          "type": "frame",
+                          "layout": "horizontal",
+                          "alignItems": "center",
+                          "width": "fill_container",
+                          "height": 56,
+                          "padding": [
+                            0,
+                            16
+                          ],
+                          "gap": 12,
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": {
+                            "bottom": 1
+                          },
+                          "children": [
+                            {
+                              "id": "data-r3-name",
+                              "name": "Name",
+                              "type": "text",
+                              "content": "張小華",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 14,
+                              "fontWeight": "400",
+                              "fill": "$color.text",
+                              "lineHeight": 1.5,
+                              "textGrowth": "fixed-width",
+                              "width": 140
+                            },
+                            {
+                              "id": "data-r3-email",
+                              "name": "Email",
+                              "type": "text",
+                              "content": "zhang@example.com",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 14,
+                              "fontWeight": "400",
+                              "fill": "$color.text-secondary",
+                              "lineHeight": 1.5,
+                              "textGrowth": "fixed-width",
+                              "width": 260
+                            },
+                            {
+                              "id": "data-r3-role",
+                              "name": "Role",
+                              "type": "text",
+                              "content": "創業家",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 14,
+                              "fontWeight": "400",
+                              "fill": "$color.text-secondary",
+                              "lineHeight": 1.5,
+                              "textGrowth": "fixed-width",
+                              "width": 120
+                            },
+                            {
+                              "id": "data-r3-status-wrap",
+                              "name": "Status Cell",
+                              "type": "frame",
+                              "width": 110,
+                              "layout": "horizontal",
+                              "children": [
+                                {
+                                  "id": "data-r3-badge",
+                                  "name": "Badge / 已訪談",
+                                  "type": "frame",
+                                  "layout": "horizontal",
+                                  "alignItems": "center",
+                                  "justifyContent": "center",
+                                  "padding": [
+                                    4,
+                                    10
+                                  ],
+                                  "cornerRadius": 9999,
+                                  "fill": "#F0FDF4",
+                                  "children": [
+                                    {
+                                      "id": "data-r3-badge-text",
+                                      "name": "Badge Text",
+                                      "type": "text",
+                                      "content": "已訪談",
+                                      "fontFamily": "Fira Sans",
+                                      "fontSize": 12,
+                                      "fontWeight": "500",
+                                      "fill": "#15803D",
+                                      "lineHeight": 1.5,
+                                      "textGrowth": "auto"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "id": "data-r3-created",
+                              "name": "Created",
+                              "type": "text",
+                              "content": "2026/06/25 18:20",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 13,
+                              "fontWeight": "400",
+                              "fill": "$color.text-muted",
+                              "lineHeight": 1.5,
+                              "textGrowth": "fixed-width",
+                              "width": 160
+                            },
+                            {
+                              "id": "data-r3-chevron",
+                              "name": "Chevron",
+                              "type": "text",
+                              "content": "",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 18,
+                              "fontWeight": "400",
+                              "fill": "$color.text-muted",
+                              "lineHeight": 1.5,
+                              "textGrowth": "auto",
+                              "width": 32
+                            }
+                          ]
+                        },
+                        {
+                          "id": "data-r4-row",
+                          "name": "Table Row / 林測試",
+                          "type": "frame",
+                          "layout": "horizontal",
+                          "alignItems": "center",
+                          "width": "fill_container",
+                          "height": 56,
+                          "padding": [
+                            0,
+                            16
+                          ],
+                          "gap": 12,
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": {
+                            "bottom": 1
+                          },
+                          "children": [
+                            {
+                              "id": "data-r4-name",
+                              "name": "Name",
+                              "type": "text",
+                              "content": "林測試",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 14,
+                              "fontWeight": "400",
+                              "fill": "$color.text",
+                              "lineHeight": 1.5,
+                              "textGrowth": "fixed-width",
+                              "width": 140
+                            },
+                            {
+                              "id": "data-r4-email",
+                              "name": "Email",
+                              "type": "text",
+                              "content": "test@example.com",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 14,
+                              "fontWeight": "400",
+                              "fill": "$color.text-secondary",
+                              "lineHeight": 1.5,
+                              "textGrowth": "fixed-width",
+                              "width": 260
+                            },
+                            {
+                              "id": "data-r4-role",
+                              "name": "Role",
+                              "type": "text",
+                              "content": "學生",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 14,
+                              "fontWeight": "400",
+                              "fill": "$color.text-secondary",
+                              "lineHeight": 1.5,
+                              "textGrowth": "fixed-width",
+                              "width": 120
+                            },
+                            {
+                              "id": "data-r4-status-wrap",
+                              "name": "Status Cell",
+                              "type": "frame",
+                              "width": 110,
+                              "layout": "horizontal",
+                              "children": [
+                                {
+                                  "id": "data-r4-badge",
+                                  "name": "Badge / 不適合",
+                                  "type": "frame",
+                                  "layout": "horizontal",
+                                  "alignItems": "center",
+                                  "justifyContent": "center",
+                                  "padding": [
+                                    4,
+                                    10
+                                  ],
+                                  "cornerRadius": 9999,
+                                  "fill": "#F1F5F9",
+                                  "children": [
+                                    {
+                                      "id": "data-r4-badge-text",
+                                      "name": "Badge Text",
+                                      "type": "text",
+                                      "content": "不適合",
+                                      "fontFamily": "Fira Sans",
+                                      "fontSize": 12,
+                                      "fontWeight": "500",
+                                      "fill": "#475569",
+                                      "lineHeight": 1.5,
+                                      "textGrowth": "auto"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "id": "data-r4-created",
+                              "name": "Created",
+                              "type": "text",
+                              "content": "2026/06/24 11:00",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 13,
+                              "fontWeight": "400",
+                              "fill": "$color.text-muted",
+                              "lineHeight": 1.5,
+                              "textGrowth": "fixed-width",
+                              "width": 160
+                            },
+                            {
+                              "id": "data-r4-chevron",
+                              "name": "Chevron",
+                              "type": "text",
+                              "content": "",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 18,
+                              "fontWeight": "400",
+                              "fill": "$color.text-muted",
+                              "lineHeight": 1.5,
+                              "textGrowth": "auto",
+                              "width": 32
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "data-click-note",
+                      "name": "Click Note",
+                      "type": "frame",
+                      "layout": "horizontal",
+                      "padding": [
+                        10,
+                        14
+                      ],
+                      "cornerRadius": "$radius.md",
+                      "fill": "#FEF3C7",
+                      "stroke": {
+                        "type": "color",
+                        "color": "#F59E0B"
+                      },
+                      "strokeWidth": 1,
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "id": "data-click-text",
+                          "name": "Note",
+                          "type": "text",
+                          "content": "📌 列表列可點擊查看詳情（US-D08 / US-08，Sprint 4）；Sprint 2 僅需列表呈現",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 12,
+                          "fontWeight": "400",
+                          "fill": "#92400E",
+                          "lineHeight": 1.5,
+                          "textGrowth": "fixed-width",
+                          "width": 900
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "variant-empty",
+          "name": "Variant / Empty",
+          "type": "frame",
+          "layout": "vertical",
+          "width": "fill_container",
+          "gap": 0,
+          "children": [
+            {
+              "id": "v-empty-label",
+              "name": "Variant Label / 2 · 空狀態",
+              "type": "frame",
+              "layout": "horizontal",
+              "width": "fill_container",
+              "padding": [
+                10,
+                16
+              ],
+              "fill": "#334155",
+              "cornerRadius": [
+                8,
+                8,
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "id": "v-empty-label-text",
+                  "name": "Label",
+                  "type": "text",
+                  "content": "2 · 空狀態",
+                  "fontFamily": "Fira Sans",
+                  "fontSize": 13,
+                  "fontWeight": "600",
+                  "fill": "#F8FAFC",
+                  "lineHeight": 1.5,
+                  "textGrowth": "auto"
+                }
+              ]
+            },
+            {
+              "id": "empty-shell",
+              "name": "Admin Shell",
+              "type": "frame",
+              "layout": "vertical",
+              "width": "fill_container",
+              "cornerRadius": "$radius.lg",
+              "fill": "$color.surface",
+              "stroke": {
+                "type": "color",
+                "color": "$color.border"
+              },
+              "strokeWidth": 1,
+              "clip": true,
+              "children": [
+                {
+                  "id": "empty-topbar",
+                  "name": "Admin Topbar",
+                  "type": "frame",
+                  "layout": "horizontal",
+                  "width": "fill_container",
+                  "height": 56,
+                  "padding": [
+                    0,
+                    24
+                  ],
+                  "fill": "#1E293B",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "empty-brand",
+                      "name": "Brand",
+                      "type": "text",
+                      "content": "Lead Collector · 管理後台",
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 14,
+                      "fontWeight": "600",
+                      "fill": "#F8FAFC",
+                      "lineHeight": 1.5,
+                      "textGrowth": "auto"
+                    },
+                    {
+                      "id": "empty-route",
+                      "name": "Route",
+                      "type": "text",
+                      "content": "/admin",
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                      "fill": "#94A3B8",
+                      "lineHeight": 1.5,
+                      "textGrowth": "auto"
+                    }
+                  ]
+                },
+                {
+                  "id": "empty-nav",
+                  "name": "Admin Nav",
+                  "type": "frame",
+                  "layout": "horizontal",
+                  "width": "fill_container",
+                  "padding": [
+                    0,
+                    24
+                  ],
+                  "gap": 4,
+                  "fill": "$color.bg",
+                  "stroke": {
+                    "type": "color",
+                    "color": "$color.border"
+                  },
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "children": [
+                    {
+                      "id": "empty-nav-leads",
+                      "name": "Nav / 名單管理",
+                      "type": "frame",
+                      "layout": "horizontal",
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "id": "empty-nav-leads-text",
+                          "name": "Nav Label",
+                          "type": "text",
+                          "content": "名單管理",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "600",
+                          "fill": "$color.secondary",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "empty-nav-dashboard",
+                      "name": "Nav / Dashboard",
+                      "type": "frame",
+                      "layout": "horizontal",
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "id": "empty-nav-dashboard-text",
+                          "name": "Nav Label",
+                          "type": "text",
+                          "content": "Dashboard",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "400",
+                          "fill": "$color.text-muted",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "empty-nav-ai",
+                      "name": "Nav / AI 文案",
+                      "type": "frame",
+                      "layout": "horizontal",
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "id": "empty-nav-ai-text",
+                          "name": "Nav Label",
+                          "type": "text",
+                          "content": "AI 文案",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "400",
+                          "fill": "$color.text-muted",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "empty-main",
+                  "name": "Main Content",
+                  "type": "frame",
+                  "layout": "vertical",
+                  "width": "fill_container",
+                  "padding": 32,
+                  "gap": 24,
+                  "fill": "$color.bg",
+                  "children": [
+                    {
+                      "id": "empty-header",
+                      "name": "Page Header",
+                      "type": "frame",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "id": "empty-title",
+                          "name": "Title",
+                          "type": "text",
+                          "content": "等候名單",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 24,
+                          "fontWeight": "700",
+                          "fill": "$color.text",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "id": "empty-sub",
+                          "name": "Subtitle",
+                          "type": "text",
+                          "content": "共 0 筆",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "400",
+                          "fill": "$color.text-secondary",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "empty-state",
+                      "name": "Empty State",
+                      "type": "frame",
+                      "layout": "vertical",
+                      "gap": 16,
+                      "width": "fill_container",
+                      "padding": [
+                        64,
+                        32
+                      ],
+                      "alignItems": "center",
+                      "cornerRadius": "$radius.lg",
+                      "fill": "$color.surface",
+                      "stroke": {
+                        "type": "color",
+                        "color": "$color.border"
+                      },
+                      "strokeWidth": 1,
+                      "children": [
+                        {
+                          "id": "empty-icon",
+                          "type": "frame",
+                          "width": 64,
+                          "height": 64,
+                          "cornerRadius": 9999,
+                          "fill": "$color.bg-alt",
+                          "layout": "horizontal",
+                          "alignItems": "center",
+                          "justifyContent": "center",
+                          "children": [
+                            {
+                              "id": "empty-icon-text",
+                              "name": "Icon",
+                              "type": "text",
+                              "content": "📋",
+                              "fontFamily": "Fira Sans",
+                              "fontSize": 28,
+                              "fontWeight": "400",
+                              "fill": "$color.text",
+                              "lineHeight": 1.5,
+                              "textGrowth": "auto"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "empty-title",
+                          "name": "Empty Title",
+                          "type": "text",
+                          "content": "目前尚無等候名單",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 20,
+                          "fontWeight": "600",
+                          "fill": "$color.text",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "id": "empty-desc",
+                          "name": "Empty Desc",
+                          "type": "text",
+                          "content": "訪客填寫銷售頁表單後，名單會顯示於此",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "400",
+                          "fill": "$color.text-secondary",
+                          "lineHeight": 1.6,
+                          "textGrowth": "fixed-width",
+                          "width": 400,
+                          "textAlign": "center"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "variant-error",
+          "name": "Variant / Error",
+          "type": "frame",
+          "layout": "vertical",
+          "width": "fill_container",
+          "gap": 0,
+          "children": [
+            {
+              "id": "v-error-label",
+              "name": "Variant Label / 3 · 讀取失敗",
+              "type": "frame",
+              "layout": "horizontal",
+              "width": "fill_container",
+              "padding": [
+                10,
+                16
+              ],
+              "fill": "#334155",
+              "cornerRadius": [
+                8,
+                8,
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "id": "v-error-label-text",
+                  "name": "Label",
+                  "type": "text",
+                  "content": "3 · 讀取失敗",
+                  "fontFamily": "Fira Sans",
+                  "fontSize": 13,
+                  "fontWeight": "600",
+                  "fill": "#F8FAFC",
+                  "lineHeight": 1.5,
+                  "textGrowth": "auto"
+                }
+              ]
+            },
+            {
+              "id": "error-shell",
+              "name": "Admin Shell",
+              "type": "frame",
+              "layout": "vertical",
+              "width": "fill_container",
+              "cornerRadius": "$radius.lg",
+              "fill": "$color.surface",
+              "stroke": {
+                "type": "color",
+                "color": "$color.border"
+              },
+              "strokeWidth": 1,
+              "clip": true,
+              "children": [
+                {
+                  "id": "error-topbar",
+                  "name": "Admin Topbar",
+                  "type": "frame",
+                  "layout": "horizontal",
+                  "width": "fill_container",
+                  "height": 56,
+                  "padding": [
+                    0,
+                    24
+                  ],
+                  "fill": "#1E293B",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "error-brand",
+                      "name": "Brand",
+                      "type": "text",
+                      "content": "Lead Collector · 管理後台",
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 14,
+                      "fontWeight": "600",
+                      "fill": "#F8FAFC",
+                      "lineHeight": 1.5,
+                      "textGrowth": "auto"
+                    },
+                    {
+                      "id": "error-route",
+                      "name": "Route",
+                      "type": "text",
+                      "content": "/admin",
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                      "fill": "#94A3B8",
+                      "lineHeight": 1.5,
+                      "textGrowth": "auto"
+                    }
+                  ]
+                },
+                {
+                  "id": "error-nav",
+                  "name": "Admin Nav",
+                  "type": "frame",
+                  "layout": "horizontal",
+                  "width": "fill_container",
+                  "padding": [
+                    0,
+                    24
+                  ],
+                  "gap": 4,
+                  "fill": "$color.bg",
+                  "stroke": {
+                    "type": "color",
+                    "color": "$color.border"
+                  },
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "children": [
+                    {
+                      "id": "error-nav-leads",
+                      "name": "Nav / 名單管理",
+                      "type": "frame",
+                      "layout": "horizontal",
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "id": "error-nav-leads-text",
+                          "name": "Nav Label",
+                          "type": "text",
+                          "content": "名單管理",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "600",
+                          "fill": "$color.secondary",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "error-nav-dashboard",
+                      "name": "Nav / Dashboard",
+                      "type": "frame",
+                      "layout": "horizontal",
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "id": "error-nav-dashboard-text",
+                          "name": "Nav Label",
+                          "type": "text",
+                          "content": "Dashboard",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "400",
+                          "fill": "$color.text-muted",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "error-nav-ai",
+                      "name": "Nav / AI 文案",
+                      "type": "frame",
+                      "layout": "horizontal",
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "id": "error-nav-ai-text",
+                          "name": "Nav Label",
+                          "type": "text",
+                          "content": "AI 文案",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "400",
+                          "fill": "$color.text-muted",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "error-main",
+                  "name": "Main Content",
+                  "type": "frame",
+                  "layout": "vertical",
+                  "width": "fill_container",
+                  "padding": 32,
+                  "gap": 24,
+                  "fill": "$color.bg",
+                  "children": [
+                    {
+                      "id": "error-header",
+                      "name": "Page Header",
+                      "type": "frame",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "width": "fill_container",
+                      "children": [
+                        {
+                          "id": "error-title",
+                          "name": "Title",
+                          "type": "text",
+                          "content": "等候名單",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 24,
+                          "fontWeight": "700",
+                          "fill": "$color.text",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "id": "error-sub",
+                          "name": "Subtitle",
+                          "type": "text",
+                          "content": "無法載入資料",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "400",
+                          "fill": "$color.text-secondary",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "error-banner",
+                      "name": "Error Banner",
+                      "type": "frame",
+                      "layout": "horizontal",
+                      "gap": 10,
+                      "width": "fill_container",
+                      "padding": [
+                        14,
+                        16
+                      ],
+                      "cornerRadius": "$radius.md",
+                      "fill": "$color.error-bg",
+                      "stroke": {
+                        "type": "color",
+                        "color": "$color.error"
+                      },
+                      "strokeWidth": 1,
+                      "children": [
+                        {
+                          "id": "error-banner-text",
+                          "name": "Error",
+                          "type": "text",
+                          "content": "無法載入名單，請稍後再試",
+                          "fontFamily": "Fira Sans",
+                          "fontSize": 14,
+                          "fontWeight": "500",
+                          "fill": "$color.error",
+                          "lineHeight": 1.5,
+                          "textGrowth": "auto"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "error-skeleton",
+                      "name": "Table Skeleton",
+                      "type": "frame",
+                      "layout": "vertical",
+                      "width": "fill_container",
+                      "cornerRadius": "$radius.md",
+                      "fill": "$color.surface",
+                      "stroke": {
+                        "type": "color",
+                        "color": "$color.border"
+                      },
+                      "strokeWidth": 1,
+                      "opacity": 0.5,
+                      "children": [
+                        {
+                          "id": "error-skeleton-header",
+                          "type": "frame",
+                          "height": 44,
+                          "width": "fill_container",
+                          "fill": "#F1F5F9"
+                        },
+                        {
+                          "id": "error-skeleton-row-1",
+                          "type": "frame",
+                          "height": 56,
+                          "width": "fill_container",
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": {
+                            "bottom": 1
+                          }
+                        },
+                        {
+                          "id": "error-skeleton-row-2",
+                          "type": "frame",
+                          "height": 56,
+                          "width": "fill_container",
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": {
+                            "bottom": 1
+                          }
+                        },
+                        {
+                          "id": "error-skeleton-row-3",
+                          "type": "frame",
+                          "height": 56,
+                          "width": "fill_container",
+                          "fill": "$color.surface",
+                          "stroke": {
+                            "type": "color",
+                            "color": "$color.border"
+                          },
+                          "strokeWidth": {
+                            "bottom": 1
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "error-note",
+                      "name": "Error Note",
+                      "type": "text",
+                      "content": "頁面結構保持完整，僅主內容區顯示錯誤提示",
+                      "fontFamily": "Fira Sans",
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                      "fill": "$color.text-muted",
+                      "lineHeight": 1.5,
+                      "textGrowth": "auto"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
